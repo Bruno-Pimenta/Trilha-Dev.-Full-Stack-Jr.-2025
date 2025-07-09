@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    <title>Formulário de Feedback</title>
+</head>
+<body class="feedback-container">
+    <header class="container header-background-container">
+        <nav class="header-container">
+            <div class="header-logo-name">
+                <div>
+                    <img class="logo" src="assets/logo-shooting-stars.png" alt="Logo">
+                    <h2 class="title-general">
+                        P&V
+                    </h2>
+                </div>
+            </div>    
+            <ul>
+                <li class=" class="title-general"">
+                    <a href="">Link 1</a>
+                </li>
+                <li class=" class="title-general"">
+                    <a href="">Link 2</a>
+                </li>
+                <li class=" class="title-general"">
+                    <a href="">Link 3</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <form action="" class="form-container">
+            <label for="name">Nome
+                <input type="text" id="name" placeholder="Ex.: Bruno Henrique....." required>
+            </label>
+            <label for="e-mail">E-Mail
+                <input type="email" id="e-mail" placeholder="Ex.:brunopimenta@gmail.com" required>
+            </label>
+            <label for="street">Rua
+                <input type="text" id="street" required>
+            </label>
+            <label for="number">Número
+                <input type="number" id="number" min="1">
+            </label>
+            <label for="district">Bairro
+                <input type="text" id="district">
+            </label>
+            <label for="city">Cidade
+                <input type="text" id="city">
+            </label>
+            <label for="state">Estado
+                <select  name="estado" id="state" required>
+                    <option value "" selected disabled>Escolha o estado</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+                </select>
+            </label>
+            <span>
+                Tipo de feedback:
+                <label for="1"> 
+                    <input type="radio" name="feedback" id="1" required>
+                    Elogios
+                </label>
+                <label for="2">
+                    <input type="radio" name="feedback" id="2">
+                    Reclamações
+                </label>
+                <label for="3">
+                    <input type="radio" name="feedback" id="3">
+                    Sugestões
+                </label>
+            </span>
+            <label for="message" required>
+                Mensagem de Feedback
+                <textarea name="" id="message" placeholder="Deixe aqui sua mensagem"></textarea>
+            </label>
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+    <footer class="container footer-background-container">
+        <div class="footer-container">
+            <h2 class="title-general">
+                P&V
+            </h2>
+            <p>&copy;opyright 2025 - P&V. Todos os direitos reservados</p>
+        </div>
+    </footer>
+</body>
+</html>
