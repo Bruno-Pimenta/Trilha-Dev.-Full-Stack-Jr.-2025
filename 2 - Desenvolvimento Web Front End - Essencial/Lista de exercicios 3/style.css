@@ -256,6 +256,42 @@ p{
     background-color: aqua;
 }
 
+.gallery-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+
+.gallery-itens{
+    display: grid;
+    align-items: center;
+    grid-gap:1rem;
+    margin: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 500px;
+    width: 500px;
+    padding: 3rem;
+}
+
+.gallery-itens-1{
+    background: conic-gradient(from -180deg at center,red,  orange, royalblue, purple);
+}
+
+.gallery-itens-2{
+    background: conic-gradient(from -180deg at center,rgb(255, 11, 145), rgb(7, 206, 7),  gray, rgba(255, 238, 0, 0.945));
+}
+
+.gallery-itens > img{
+    width: 50%;
+    align-self: center;
+    justify-self: center;
+}
+
+
 @media(min-width: 900px){
     .section-img-container img{
         max-width: 100%;
@@ -295,6 +331,13 @@ p{
         max-width: 40%;
         width: 40%;
     }
+
+    
+    .gallery-itens{
+        max-width: 100%;
+        width: 100%;
+    }
+
 }
 
 @media(max-width: 600px){
@@ -317,5 +360,19 @@ p{
         width: 30%;
         max-width: 30%;
     }
+
+    .gallery-itens{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .gallery-itens-1{
+        background: linear-gradient(-45deg,purple, red, royalblue, orange);
+    }
+
+    .gallery-itens-2{
+        background: linear-gradient(-45deg, rgba(255, 238, 0, 0.945), rgb(255, 11, 145) ,gray, rgb(7, 206, 7));
+    }
+
+    
 }
 
