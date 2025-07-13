@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --button-submit-color:#F9E6CF;
+    --form-background-color-1:rgb(255, 201, 243);
+    --form-background-color-2:rgb(247, 118, 219);
+    --button-background-color:rgb(11, 68, 255);
+    --field-color-hover:aqua;
+    --main-container-color:#f3c790;
+}
+
+.main-container{
+    width: 100%;
+    max-width: 100%;
+    background-color: var(--main-container-color);
+}
+
+.form-container{
+    max-width: 90%;
+    width: 90%;
+    padding: 2rem;
+    background:linear-gradient(90deg, var(--form-background-color-1), var(--form-background-color-2));
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container > label, .form-container > label > input, .form-container select, .form-container textarea, .form-container > span, .form-container > button{
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0.5rem;
+    border-radius: 5px;
+    width: 60%;
+}
+
+.form-container > label, .form-container > span{
+    margin-bottom: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#number{
+    width: 20%;
+    max-width: 20%;
+}
+
+.form-container > label > textarea{
+    resize: none;
+    height: 15rem;
+    box-shadow: 0.2rem 0.2rem 1.5rem black;
+    margin: 1rem;
+}
+
+.form-container > button{
+    width: 15%;
+    max-width: 15%;
+    background-color:var(--button-background-color);
+    color:  var(--button-submit-color);
+    border: 0.2rem solid var(--button-submit-color);
+    border-radius: 1rem;
+    font-weight: bolder;
+    padding: 1.5rem 1rem;
+    transition: background-color ease 0.5s;
+    display: flex;
+    justify-content: center;
+}
+
+.form-container input, textarea{
+    transition: background-color 0.6s cubic-bezier(0.37, 0, 0.63, 1);
+}
+
+.form-container input:hover, .form-container textarea:hover, .form-container > button:hover{
+    background-color: var(--field-color-hover);
+}
+
+.form-container > button:hover{
+    color: black;
+}
+
+@media(min-width: 700px){
+    .section-container{
+        display: flex;
+    }
+}
+
+@media(max-width: 700px){
+
+    .form-container > label, .form-container > label > input, .form-container select, .form-container textarea, .form-container > span, .form-container > button{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #number, .form-container > button{
+        width: 30%;
+        max-width: 30%;
+    }
+
+}

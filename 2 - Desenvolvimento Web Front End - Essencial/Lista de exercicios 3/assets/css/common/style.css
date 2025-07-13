@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --title-font-color:#f55a12;
+    --paragraph-font-color:#69247C;
+    --main-content-background:#fff1df;
+    --image-hover-color:aqua;
+    --general-text-color:black;
+    --img-border:#f55a12;
+}
+
+
+img{
+    display: block;
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+h2{
+    font-size: 2.5rem;
+    text-decoration: underline;
+}
+
+.destaque{
+    font-style: italic;
+    background-color: palevioletred;
+    padding: 0.3rem;
+    opacity: 0.8;
+    border-radius: 3rem;
+}
+
+.header-container{
+    padding-bottom: 1rem;
+}
+
+#importante{
+    border-top: 1.5rem solid palevioletred;
+    padding: 1rem 0rem;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.main-container{
+    width: 100%;
+    max-width: 100%;
+    background-color: var(--main-content-background);
+    padding: 1rem 0rem;
+    font-size: 1.2rem;
+}
+
+.content-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-title{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color:var(--title-font-color);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1rem 0;
+}
+
+.main-text{
+    color:var(--general-text-color);
+    font-size: 1.4rem;
+}
+
+.section-mission-text-container, .section-vision-text-container, .section-img-container{
+    max-width: 50%;
+    position: relative;
+    align-self: center;
+}
+
+.section-mission-text-container{
+    margin-right: 2rem;
+}
+
+.section-vision-text-container{
+    margin-left: 2rem;
+}
+
+.section-img-container img{
+    box-shadow: 3px 0px 15px 9px var(--img-border);
+    border-radius: 5rem;
+}
+
+.section-img-container::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: var(--image-hover-color);
+    opacity: 0.25;
+    transition: opacity 0.6s ease;
+    box-shadow: 0;
+    border-radius: 5rem;
+}
+
+.section-img-container:hover::after {
+    opacity: 0.05;
+}
+
+.section-container{
+    margin: 2rem 0;
+}
+
+@media(min-width: 700px){
+    .section-img-container img{
+        max-width: 100%;
+        object-fit: contain;
+    }
+
+    .section-container{
+        display: flex;
+    }
+}
+
+@media(max-width: 700px){
+    .section-img-container img{
+        max-width: 100%;
+        object-fit: contain;
+        margin: 4% 0;
+        display: flex;
+        margin-top: 3rem;
+    }
+
+    .section-mission-text-container, .section-vision-text-container{
+        max-width: 100%;
+        position: relative;
+        flex-wrap: wrap;
+        margin-left: 0;
+        margin-right:0;
+    }
+}
+
+

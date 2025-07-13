@@ -4,56 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../assets/css/common/header.css">
+    <link rel="stylesheet" href="../assets/css/galeria.css">
+    <link rel="stylesheet" href="../assets/css/common/footer.css">
 </head>
 <body >
-     <header class="container header-container">
-        <div class="header-menu-left-panel">
-            <div class="logo">
-                <img src="assets/logo-shooting-stars.png" alt=""></div>
-            <p class="logo-name-header">
-                LOREM <br> IPSUM
-            </p>
-        </div>
-
-        <input type="checkbox" id="header-menu-control" class="header-menu-control-style">
-
-        <ul class="header-menu">
-            <li class="header-menu-item">
-                <a href="#">Home</a>
-            </li>
-            <li class="header-menu-item">
-                <a href="sobre/index.html">Sobre nós</a>
-            </li>
-            <li class="header-menu-item">
-                <a href="#services">Serviços</a>
-            </li>
-            <li class="header-menu-item">
-                <a href="contato/index.html">Contato</a>
-            </li>
-        </ul>
-
-        <label for="header-menu-control" class="hamburguer-icon">
-            <div class="header-menu-buttom">
-                <img src="assets/menu-hamburger-icon.png" alt="">
+    <header class="header-container">
+        <nav class="nav-container container">
+            <div class="nav-logo-container">
+                <div class="logo-img-container">
+                    <img src="../assets/img/logo-shooting-stars.png" alt="Logo da Shooting Stars">
+                </div>
+                <span class="logo-name-nav">
+                    LOREM <br> IPSUM
+                </span>
             </div>
-         </label>
+
+            <input type="checkbox" id="nav-menu-control" class="nav-menu-control-style">
+
+            <ul class="nav-menu">
+                <li class="nav-menu-item">
+                    <a href="../index.html">Home</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="../feedback/feedback.html">Feedback</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="#">Galeria</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="../listas/listas.html">Listas</a>
+                </li>
+            </ul>
+
+            <label for="nav-menu-control" class="hamburguer-icon">
+                <div class="nav-hamburger-menu-buttom">
+                    <img src="../assets/img/menu-hamburger-icon.png" alt="Ícone do menu Hambúrguer">
+                </div>
+            </label>
+        </nav>
     </header>
+
     <main class="main-container">
-        <picture class="gallery-container">
+        <picture class="gallery-container container">
             <div class="gallery-itens gallery-itens-1">
-                <img src="assets/agumon.png" alt="">
-                <img src="assets/gabumon.png" alt="">
-                <img src="assets/biyomon.png" alt="">
-                <img src="assets/tentomon.png" alt="">
+                <div class="item-align">
+                    <img src="../assets/img/agumon.png" alt="Agumon">
+                    <span class="caption">Agumon</span>
+                </div>
+                <div class="item-align">
+                    <img src="../assets/img/gabumon.png" alt="Gabumon">
+                    <span class="caption">Gabumon</span>
+                </div>
+                <div class="item-align">
+                    <img src="../assets/img/biyomon.png" alt="Biyomon">
+                    <span class="caption">Biyomon</span>
+                </div>
+                <div class="item-align">
+                    <img src="../assets/img/tentomon.png" alt="Tentomon">
+                    <span class="caption">Tentomon</span>
+                </div>
             </div>
             <div class="gallery-itens gallery-itens-2">
-                <img src="assets/palmon.png" alt="">
-                <img src="assets/gomamon.png" alt="">
-                <img src="assets/tailmon.png" alt="">
-                <img src="assets/patamon.png" alt="">
+                <div class="item-align">
+                    <img src="../assets/img/palmon.png" alt="Palmon">
+                    <span class="caption">Palmon</span>
+                </div>
+                <div class="item-align">
+                    <img src="../assets/img/gomamon.png" alt="Gomamon">
+                    <span class="caption">Gomamon</span>
+                </div>
+                <div class="item-align">
+                    <img src="../assets/img/tailmon.png" alt="Tailmon">
+                    <span class="caption">Tailmon</span>
+                </div>
+                <div class="item-align">
+                    <img src="../assets/img/patamon.png" alt="Patamon">
+                    <span class="caption">Patamon</span>
+                </div>
             </div>
         </picture>
     </main>
+
+    <footer class="footer-container">
+        <div class="container footer-elements">
+            <span class="logo-name-footer">
+                LOREM <br> IPSUM
+            </span>
+            <p class="copyright-text-footer">&copy;opyright 2025 - LOREM IPSUM. Todos os direitos reservados</p>
+        </div>
+    </footer>
 </body>
 </html>

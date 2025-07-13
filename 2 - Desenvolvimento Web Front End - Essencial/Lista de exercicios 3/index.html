@@ -1,79 +1,95 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Index</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/common/header.css">
+    <link rel="stylesheet" href="assets/css/common/style.css">
+    <link rel="stylesheet" href="assets/css/common/footer.css">
 </head>
 <body>
-    <header class="container header-background-container">
-        <nav class="header-container">
-            <div class="header-logo-name">
-                <div>
-                    <img class="logo" src="assets/logo-shooting-stars.png" alt="Logo">
-                    <h2 class="title-general">
-                        P&V
-                    </h2>
+    <header class="header-container">
+        <nav class="nav-container container">
+            <div class="nav-logo-container">
+                <div class="logo-img-container">
+                    <img src="assets/img/logo-shooting-stars.png" alt="Logo da Shooting Stars">
                 </div>
-            </div>    
-            <ul>
-                <li class=" class="title-general"">
-                    <a href="">Link 1</a>
+                <span class="logo-name-nav">
+                    LOREM <br> IPSUM
+                </span>
+            </div>
+
+            <input type="checkbox" id="nav-menu-control" class="nav-menu-control-style">
+
+            <ul class="nav-menu">
+                <li class="nav-menu-item">
+                    <a href="#">Home</a>
                 </li>
-                <li class=" class="title-general"">
-                    <a href="">Link 2</a>
+                <li class="nav-menu-item">
+                    <a href="feedback/feedback.html">Feedback</a>
                 </li>
-                <li class=" class="title-general"">
-                    <a href="">Link 3</a>
+                <li class="nav-menu-item">
+                    <a href="galeria/galeria.html">Galeria</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="listas/listas.html">Listas</a>
                 </li>
             </ul>
+
+            <label for="nav-menu-control" class="hamburguer-icon">
+                <div class="nav-hamburger-menu-buttom">
+                    <img src="assets/img/menu-hamburger-icon.png" alt="Ícone do menu Hambúrguer">
+                </div>
+            </label>
         </nav>
-        <div class="header-container content-container">
-            <h1 class="title-general">
+        <div class="container">
+             <h1 class="header-title">
                 Shooting Stars Tecnology's
             </h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea delectus inventore mollitia ad? Ipsa tempora qui accusantium ex maxime dicta maiores. Accusantium officia dolores odit. Odio quia ullam ducimus explicabo? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem veniam officia molestias nulla fugiat iusto tenetur quisquam aperiam, voluptatibus sequi recusandae perferendis obcaecati dicta commodi quo minus dolor asperiores vel. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, nisi repellat consequuntur doloribus ipsam repudiandae. Ipsum omnis labore error tenetur eaque optio harum tempora officia id, quisquam iste velit eligendi!
+            <p class="header-paragraph" id="importante">
+                <span class="destaque">Lorem ipsum</span> dolor sit amet consectetur adipisicing elit. Ea delectus inventore mollitia ad? Ipsa tempora qui accusantium ex maxime dicta maiores. Accusantium officia dolores odit. Odio quia ullam ducimus explicabo? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem veniam officia molestias nulla fugiat iusto tenetur quisquam aperiam, voluptatibus sequi recusandae perferendis obcaecati dicta commodi quo minus dolor asperiores vel. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, nisi repellat consequuntur doloribus ipsam repudiandae. Ipsum omnis labore error tenetur eaque optio harum tempora officia id, quisquam iste velit eligendi!
             </p>
         </div>
     </header>
-    <main class="container">
-        <div class="main-container">
+
+    <main class="main-container">
+        <div class="container">
             <section class="section-container">
                 <div class="section-mission-text-container content-container">
-                    <h2 class="title-general">
+                    <h2 class="main-title">
                         Missão
                     </h2>
-                    <p>
+                    <p class="main-text">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem veniam officia molestias nulla fugiat iusto tenetur quisquam aperiam, voluptatibus sequi recusandae perferendis obcaecati dicta commodi quo minus dolor asperiores vel. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, nisi repellat consequuntur doloribus ipsam repudiandae. Ipsum omnis labore error tenetur eaque optio harum tempora officia id, quisquam iste velit eligendi!
                     </p>
                 </div>
                 <picture class="section-img-container">
-                    <img src="assets/istockphoto-1-1024x1024.jpg" alt="image">
+                    <img src="assets/img/istockphoto-1-1024x1024.jpg" alt="Imagem de pessoas em reunião">
                 </picture>
             </section>
             <section class="section-container">
                 <picture class="section-img-container" >
-                        <img src="assets/istockphoto-2-1024x1024.jpg" alt="image">
+                        <img src="assets/img/istockphoto-2-1024x1024.jpg" alt="Imagem de 2 pessoas trabalhando bem alegres">
                 </picture>
                 <div class="section-vision-text-container content-container">
-                    <h2 class="title-general">
+                    <h2 class="main-title">
                         Visão
                     </h2>
-                    <p>
+                    <p class="main-text">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem veniam officia molestias nulla fugiat iusto tenetur quisquam aperiam, voluptatibus sequi recusandae perferendis obcaecati dicta commodi quo minus dolor asperiores vel. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, nisi repellat consequuntur doloribus ipsam repudiandae. Ipsum omnis labore error tenetur eaque optio harum tempora officia id, quisquam iste velit eligendi!
                     </p>
                 </div>
             </section>
         </div>
     </main>
-    <footer class="container footer-background-container">
-        <div class="footer-container">
-            <h2 class="title-general">
-                P&V
-            </h2>
-            <p>&copy;opyright 2025 - P&V. Todos os direitos reservados</p>
+
+    <footer class="footer-container">
+        <div class="container footer-elements">
+            <span class="logo-name-footer">
+                LOREM <br> IPSUM
+            </span>
+            <p class="copyright-text-footer">&copy;opyright 2025 - LOREM IPSUM. Todos os direitos reservados</p>
         </div>
     </footer>
 </body>
