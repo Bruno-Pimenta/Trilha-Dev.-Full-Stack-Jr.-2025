@@ -1,0 +1,293 @@
+:root{
+    --main-font-color:#F9E6CF;
+    --header-background-color-1:#000000;
+    --header-background-color-2:#1a1a1a;
+    --theme-color-1:#800020;
+    --theme-color-2:#ff0000;
+    --contrast-text:#cf0c0c;
+    --hover-text:black;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.custom-background {
+  background: linear-gradient(
+    -110deg,
+    #ff0000 0%,
+    #800020 15%,
+    #1a1a1a 20%,
+    #1a1a1a 40%,
+    #1a1a1a 65%,
+    #1a1a1a 80%,
+    #800020 90%,
+    #ff0000 100%    
+  );
+}
+
+
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: center;
+  padding: 2rem 0rem;
+}
+
+.about-left {
+  width: 30%;
+  max-width: 30%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.profile-photo {
+  width: 100%;
+  max-width: 250px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.about-right {
+  width: 70%;
+  max-width: 70%;
+}
+
+.about-right h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.2rem;
+  color: var(--main-font-color);
+}
+
+.about-right h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  width: 40%;
+}
+
+.text-gradient {
+  background: linear-gradient(90deg,var(--main-font-color), var(--theme-color-1), var(--theme-color-2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-emphasis{
+  color:var(--contrast-text);
+  font-weight: bolder;
+}
+
+.about-right p {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--main-font-color);
+}
+
+.about-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #fff;
+  background-color: var(--header-background-color-1);
+  transition: background 0.3s ease;
+  border: 2px solid var(--theme-color-1)
+}
+
+.btn:hover {
+  background-color: var(--theme-color-2);
+  color: black;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: white;
+  background-color: var(--theme-color-1);
+  border: 2px solid black;
+}
+
+.btn-outline:hover {
+  background-color: var(--theme-color-2);
+  color: black;
+}
+
+.skill-title{
+  padding: 2.5rem 0rem;
+}
+
+.tech-marquee {
+  overflow: hidden;
+  width: 100%;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.marquee-track {
+  display: flex;
+  width: fit-content;
+  animation: scroll-left 15s linear infinite;
+  gap: 2rem;
+}
+
+.tech-card, .soft-skill-card {
+  min-width: 120px;
+  height: 140px;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-family: sans-serif;
+  transition: transform 0.6s ease;
+}
+
+.tech-card img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 0.5rem;
+}
+
+.tech-card:hover, .soft-skill-card:hover {
+  transform: scale(1.1);
+}
+
+.soft-skill-card-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.soft-skill-card{
+  min-width: 15rem;
+  max-width: 20%;
+  margin: 0rem 1rem 1rem 1rem;
+  height: 12.5rem;
+  background-color: #fff;
+  color: var(--main-font-color);
+  opacity: 0.6;
+  transition: opacity ease 0.6s;
+}
+
+.soft-skill-card img{
+  max-width: 100%;
+  max-height:70%;
+  margin-bottom: 0.5rem;
+}
+
+.soft-skill-card p{
+  color: var(--theme-color-1);
+  font-weight: bolder;
+  max-width: 100%;
+  text-align: center;
+}
+
+
+.soft-skill-card:hover{
+  opacity: 1;
+}
+
+.html-card{
+  background-color: #E34F26;
+}
+
+.css-card{
+  background-color: #663399;
+}
+
+.javascript-card{
+  background-color: #F7DF1E;
+}
+
+.mysql-card{
+  background-color: #4479A1;
+}
+
+.react-card{
+  background-color: #61DAFB;
+}
+
+.postgresql-card{
+  background-color: #4169E1;
+}
+
+.spring-card{
+  background-color: #6DB33F;
+}
+
+.java-card{
+  background-color: #ffffff;
+}
+
+.git-card{
+  background-color: #F05032;
+}
+
+.github-card{
+  background-color: #9c9696;
+}
+
+
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+@media(max-width: 600px){
+  .about-section{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-left {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  }
+
+  .about-right {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .soft-skill-card{
+    width: 80%;
+    max-width: 80%;
+    height: 15rem;
+    margin-bottom: 2rem;
+  }
+}
