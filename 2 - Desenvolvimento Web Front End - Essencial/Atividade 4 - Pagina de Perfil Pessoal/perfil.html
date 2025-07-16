@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/header.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/footer.css">
+    <title>Portfólio</title>
 </head>
 <body>
     <header class="header-container">
@@ -63,7 +64,7 @@
         </section>
         <section>
             <div class="tech-marquee">
-                <h1 class="skill-title text-gradient">Habilidades Técnicas / Hard Skills</h1>
+                <h1 class="skill-title text-gradient container">Habilidades Técnicas / Hard Skills</h1>
                 <div class="marquee-track">
                     <div class="tech-card html-card">
                         <img src="assets/html5.svg" alt="HTML"><p>HTML</p>
@@ -96,7 +97,9 @@
                         <img src="assets/github.svg" alt="GitHub"><p>GitHub</p>
                     </div>
                 </div>
-                <h1 class="skill-title text-gradient">Habilidades Comportamentais / Soft Skills</h1>
+                <h1 class="skill-title text-gradient container">
+                    Habilidades Comportamentais / Soft Skills
+                </h1>
                 <div class="container soft-skill-card-container">
                     <div class="soft-skill-card">
                         <img src="assets/time management.jpg" alt="">
@@ -118,6 +121,59 @@
             </div>
         </section>
 
+        <section class="projects-section container">
+            <h1 class="projects-title text-gradient">Projetos</h1>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="./assets/projects.jpg" alt="Projeto 1">
+                    <h2 class="project-title">Sistema de Controle de Tarefas</h2>
+                    <p class="project-description">
+                        Aplicação web para organização de tarefas com autenticação e painel de controle.
+                    </p>
+                    <p class="project-tech"><strong>Tecnologias:</strong> Java, Spring Boot, MySQL, React</p>
+                    <div class="project-buttons">
+                        <a href="https://meudeploy.com" target="_blank" class="project-btn">
+                            Deploy
+                        <a href="https://github.com/seuusuario/repositorio" target="_blank" class="project-btn">
+                            GitHub                        
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="./assets/projects.jpg" alt="Projeto 2">
+                    <h2 class="project-title">Sistema de Controle de Tarefas</h2>
+                    <p class="project-description">
+                        Aplicação web para organização de tarefas com autenticação e painel de controle.
+                    </p>
+                    <p class="project-tech"><strong>Tecnologias:</strong> Java, Spring Boot, MySQL, React</p>
+                    <div class="project-buttons">
+                        <a href="https://meudeploy.com" target="_blank" class="project-btn">
+                            Deploy
+                        </a>
+                        <a href="https://github.com/seuusuario/repositorio" target="_blank" class="project-btn">
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer class="footer-container">
+        <div class="container contacts-elements">
+            <h1 class="contact-title text-gradient">Contato</h1>
+            <div class="contact-icons-container">
+                <a href=""><img src="./assets/linkedin.svg" alt="Contato pelo LinkedIn"></a>
+                <a href=""><img src="./assets/github.svg" alt="Repositório do GitHub"></a>
+                <a href=""><img src="./assets/whatsapp.svg" alt="Contato pelo WhatsApp"></a>
+            </div>
+        </div>
+        <div class="container footer-elements">
+            <span class="logo-name-nav">
+                    <span class="nav-name-style">B</span>runo
+                    <span class="nav-name-style">H</span>enrique
+            </span>
+            <p class="copyright-text-footer">&copy; 2025 - Bruno Henrique. Todos os direitos reservados</p>
+        </div>
+    </footer>
 </body>
 </html>

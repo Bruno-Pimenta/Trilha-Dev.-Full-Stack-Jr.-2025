@@ -14,9 +14,6 @@
 }
 
 
-img{
-    display: block;
-}
 
 .container{
     width: 90%;
@@ -213,7 +210,7 @@ img{
     }
 
     .nav-hamburger-menu-buttom{
-        background: white;
+        background: linear-gradient(90deg,var(--theme-color-1), var(--theme-color-2));
         border-radius: 50%;
     }
 
