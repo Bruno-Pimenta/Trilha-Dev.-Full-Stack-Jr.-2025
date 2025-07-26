@@ -4,16 +4,24 @@
     padding: 0;
 }
 
-:root{
-    --header-main-font-color:#F9E6CF;
-    --header-background-color-1:#000000;
-    --header-background-color-2:#1a1a1a;
-    --hover-effect:#ff0000;
-    --text-effect:#ff0000;
-    --hover-text:black;
+.roboto-mono-style {
+font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 2rem;
+  font-style: normal;
 }
 
-
+:root{
+    --text-color:#F9E6CF;
+    --header-and-footer-color-1:#000000;
+    --header-and-footer-color-2:#1a1a1a;
+    --theme-color-1:#800020;
+    --theme-color-2:#ff0000;
+    --contrast-text:#cf0c0c;
+    --hover-text:#000000;
+    --button-color-1:#000000;
+    --button-color-1:#800020;
+}
 
 .container{
     width: 90%;
@@ -26,7 +34,7 @@
     max-width: 100%;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(75deg, var(--header-background-color-1), var(--header-background-color-2));
+    background: linear-gradient(75deg, var(--header-and-footer-color-1), var(--header-and-footer-color-2));
 }
 
 .nav-container{
@@ -62,12 +70,12 @@
     height: 100%;
     font-weight: bold;
     font-size: 1.5rem;
-    color: var(--main-font-color);
+    color: var(--text-color);
     align-self: center;
 }
 
 .nav-name-style{
-    color:var(--text-effect);
+    color:var(--contrast-text);
     font-size: 1.7rem;
 }
 
@@ -86,7 +94,7 @@
     transition: background-color ease 0.6s;
 }
 .nav-menu li:hover {
-    background-color: var(--hover-effect);
+    background-color: var(--contrast-text);
 }
 
 .nav-menu a:hover {
@@ -97,7 +105,7 @@
     display: flex;
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
-    color: var(--main-font-color);
+    color: var(--text-color);
     text-decoration: none;
     font-size: 1rem;
     font-weight: bold;
@@ -179,7 +187,7 @@
         position: fixed;
         top: 0;
         right: 0;
-        background: linear-gradient(75deg, var(--header-background-color-1), var(--header-background-color-2));
+        background: linear-gradient(75deg, var(--header-and-footer-color-1), var(--header-and-footer-color-2));
         height: 100%;
         z-index: 1;
         justify-content: center;
@@ -218,7 +226,6 @@
         display: none;
     }
 }
-
 
 
 

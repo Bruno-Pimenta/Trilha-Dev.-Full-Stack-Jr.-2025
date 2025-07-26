@@ -3,13 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <title>Portfólio</title>
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
+
 </head>
 <body>
-    <header class="header-container">
+    <header class="header-container roboto-mono-style">
         <nav class="nav-container container">
             <div class="nav-logo-container">
                 <span class="logo-name-nav">
@@ -21,136 +27,143 @@
             <input type="checkbox" id="nav-menu-control" class="nav-menu-control-style">
 
             <ul class="nav-menu">
-                <li class="nav-menu-item">
-                    <a href="#">Sobre Mim</a>
+                <li class="nav-menu-item" >
+                    <a href="#about">Sobre Mim</a>
                 </li>
                 <li class="nav-menu-item">
-                    <a href="#">Habilidades <!--Técnicas e Comportamentais--></a>
+                    <a href="#skills">Habilidades <!--Técnicas e Comportamentais--></a>
                 </li>
                 <li class="nav-menu-item">
-                    <a href="#">Projetos</a>
+                    <a href="#projects">Projetos</a>
                 </li>
                 <li class="nav-menu-item">
-                    <a href="#">Contato</a>
+                    <a href="#contact">Contato</a>
                 </li>
             </ul>
 
             <label for="nav-menu-control" class="hamburger-icon">
                 <div class="nav-hamburger-menu-buttom">
-                    <img src="assets/menu-hamburger-icon.png" alt="Ícone do menu Hambúrguer">
+                    <img src="./assets/img/menu-hamburger-icon.png" alt="Ícone do menu Hambúrguer">
                 </div>
             </label>
         </nav>
     </header>
-    <main class="custom-background">
-        <section class="container about-section">
+    <main class="custom-background roboto-mono-style">
+        <section class="about-section container" id="about">
             <div class="about-left">
-                <img src="assets/foto-bruno.png" alt="Foto de Bruno Pimenta" class="profile-photo">
+                <img src="assets/img/foto-bruno.jpg" alt="Foto de Bruno Pimenta" class="profile-photo">
             </div>
-            <div class="about-right">
-                <h1>Bruno <span class="text-emphasis">Pimenta</span></h1>
+            <div class="about-right roboto-mono-style">
+                <h1>Bruno 
+                    <span class="text-emphasis">Pimenta</span>
+                </h1>
                 <h2 class="text-gradient">Desenvolvedor Fullstack</h2>
                 <p>
                     Tenho 34 anos, sou estudante do curso de Bacharelado em Ciência da Computação (8º período) no Instituto Federal do Sul de Minas - Campus Passos e também estudante do curso Dev. Full Stack Jr. pelas instituições +praTi & Codifica.
-                    </p>
+                </p>
                 <p>
                     Possuo experiência com atendimento ao público, rotinas administrativas que envolvem informações sigilosas, e tenho dedicado os últimos anos para focar na minha transição de carreira e na minha graduação. Estudo há algum tempo <span class="text-emphasis">Java</span> com <span class="text-emphasis">Spring</span> e, mais recentemente, venho me dedicando ao desenvolvimento com <span class="text-emphasis">React</span>.
                 </p>
+                <p>
+                    Afirmo que tudo aquilo que ainda não sei, estou pronto para aprender.
+                </p>
                 <div class="about-buttons">
-                    <a href="assets/curriculo-bruno.pdf" download class="btn">Meu Currículo</a>
-                    <a href="#contato" class="btn btn-outline">Contato</a>
+                    <a href="./assets/curriculo/BrunoHenriquePimenta-Curriculo.pdf" download="Curriculo"class="btn">Meu Currículo</a>
+                    <a href="#contact" class="btn btn-contact">Contato</a>
                 </div>
             </div>
         </section>
-        <section>
-            <div class="tech-marquee">
-                <h1 class="skill-title text-gradient container">Habilidades Técnicas / Hard Skills</h1>
-                <div class="marquee-track">
-                    <div class="tech-card html-card">
-                        <img src="assets/html5.svg" alt="HTML"><p>HTML</p>
+        <section class="skills-section">
+            <h1 class="skill-title text-gradient container" id="skills">Habilidades Técnicas / Hard Skills</h1>
+            <div class="swiper container">
+                <div class="swiper-wrapper">
+                    <div class="tech-card swiper-slide" id="html-card">
+                        <img src="assets/img/html5.svg" alt="HTML"><p>HTML</p>
                     </div>
-                    <div class="tech-card css-card">
-                        <img src="assets/css.svg" alt="CSS"><p>CSS</p>
+                    <div class="tech-card swiper-slide" id="css-card">
+                        <img src="assets/img/css.svg" alt="CSS"><p>CSS</p>
                     </div>
-                    <div class="tech-card javascript-card">
-                        <img src="assets/javascript.svg" alt="JavaScript"><p>JavaScript</p>
+                    <div class="tech-card swiper-slide" id="javascript-card">
+                        <img src="assets/img/javascript.svg" alt="JavaScript"><p>JavaScript</p>
                     </div>
-                    <div class="tech-card react-card">
-                        <img src="assets/react.svg" alt="React"><p>React</p>
+                    <div class="tech-card swiper-slide" id="react-card">
+                        <img src="assets/img/react.svg" alt="React"><p>React</p>
                     </div>
-                    <div class="tech-card java-card">
-                        <img src="assets/java.svg" alt="Java"><p>Java</p>
+                    <div class="tech-card swiper-slide" id="java-card">
+                        <img src="assets/img/java.svg" alt="Java"><p>Java</p>
                     </div>
-                    <div class="tech-card spring-card">
-                        <img src="assets/spring.svg" alt="Spring"><p>Spring</p>
+                    <div class="tech-card swiper-slide" id="spring-card">
+                        <img src="assets/img/spring.svg" alt="Spring"><p>Spring</p>
                     </div>
-                    <div class="tech-card mysql-card">
-                        <img src="assets/mysql.svg" alt="MySQL"><p>MySQL</p>
+                    <div class="tech-card swiper-slide" id="mysql-card">
+                        <img src="assets/img/mysql.svg" alt="MySQL"><p>MySQL</p>
                     </div>
-                    <div class="tech-card postgresql-card">
-                        <img src="assets/postgresql.svg" alt="PostgreSQL"><p>PostgreSQL</p>
+                    <div class="tech-card swiper-slide" id="postgresql-card">
+                        <img src="assets/img/postgresql.svg" alt="PostgreSQL"><p>PostgreSQL</p>
                     </div>
-                    <div class="tech-card git-card">
-                        <img src="assets/git.svg" alt="Git"><p>Git</p>
+                    <div class="tech-card swiper-slide" id="git-card">
+                        <img src="assets/img/git.svg" alt="Git"><p>Git</p>
                     </div>
-                    <div class="tech-card github-card">
-                        <img src="assets/github.svg" alt="GitHub"><p>GitHub</p>
+                    <div class="tech-card swiper-slide" id="github-card">
+                        <img src="assets/img/github.svg" alt="GitHub"><p>GitHub</p>
                     </div>
                 </div>
-                <h1 class="skill-title text-gradient container">
-                    Habilidades Comportamentais / Soft Skills
-                </h1>
-                <div class="container soft-skill-card-container">
-                    <div class="soft-skill-card">
-                        <img src="assets/time management.jpg" alt="">
-                        <p>Gerencimento de tempo</p>
-                    </div>
-                    <div class="soft-skill-card">
-                        <img src="assets/assertive communication.jpg" alt="">
-                        <p>Comunicação Assertiva</p>
-                    </div>
-                    <div class="soft-skill-card">
-                        <img src="assets/confidential information.jpg" alt="">
-                        <p>Discrição acerca de assuntos sigilosos</p>
-                    </div>
-                    <div class="soft-skill-card">
-                        <img src="assets/collaborative profile.jpg" alt="">
-                        <p>Perfil Colaborativo</p>
-                    </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <h1 class="skill-title text-gradient container">
+                Habilidades Comportamentais / Soft Skills
+            </h1>
+            <div class="container soft-skill-card-container">
+                <div class="soft-skill-card">
+                    <img src="assets/img/time management.jpg" alt="">
+                    <p>Gerencimento de tempo</p>
+                </div>
+                <div class="soft-skill-card">
+                    <img src="assets/img/assertive communication.jpg" alt="">
+                    <p>Comunicação Assertiva</p>
+                </div>
+                <div class="soft-skill-card">
+                    <img src="assets/img/confidential information.jpg" alt="">
+                    <p>Discrição acerca de assuntos sigilosos</p>
+                </div>
+                <div class="soft-skill-card">
+                    <img src="assets/img/collaborative profile.jpg" alt="">
+                    <p>Perfil Colaborativo</p>
                 </div>
             </div>
         </section>
 
         <section class="projects-section container">
-            <h1 class="projects-title text-gradient">Projetos</h1>
+            <h1 class="projects-title text-gradient" id="projects">Projetos</h1>
             <div class="projects-grid">
                 <div class="project-card">
-                    <img src="./assets/projects.jpg" alt="Projeto 1">
+                    <img src="./assets/img/projects.png" alt="Projeto 1">
                     <h2 class="project-title">Sistema de Controle de Tarefas</h2>
                     <p class="project-description">
-                        Aplicação web para organização de tarefas com autenticação e painel de controle.
+                        Aplicação Web de lista de tarefas cujo as operações são realizadas via requisições HTTP (API).
                     </p>
-                    <p class="project-tech"><strong>Tecnologias:</strong> Java, Spring Boot, MySQL, React</p>
+                    <p class="project-tech"><strong span class="text-emphasis">Tecnologias:</strong> Java, Spring Boot, PostgreSQL, Postman</p>
                     <div class="project-buttons">
-                        <a href="https://meudeploy.com" target="_blank" class="project-btn">
+                        <a href="https://meudeploy.com" target="_blank" rel="noopener noreferrer" class="project-btn">
                             Deploy
-                        <a href="https://github.com/seuusuario/repositorio" target="_blank" class="project-btn">
+                        <a href="https://github.com/Bruno-Pimenta/to-do-list" target="_blank" rel="noopener noreferrer" class="project-btn">
                             GitHub                        
                         </a>
                     </div>
                 </div>
                 <div class="project-card">
-                    <img src="./assets/projects.jpg" alt="Projeto 2">
-                    <h2 class="project-title">Sistema de Controle de Tarefas</h2>
+                    <img src="./assets/img/projects.png" alt="Projeto 2">
+                    <h2 class="project-title">Desafio vai NuBank</h2>
                     <p class="project-description">
-                        Aplicação web para organização de tarefas com autenticação e painel de controle.
+                        Simulação de um sistema bancário cujo as operações são realizadas via terminal.
                     </p>
-                    <p class="project-tech"><strong>Tecnologias:</strong> Java, Spring Boot, MySQL, React</p>
+                    <p class="project-tech"><strong span class="text-emphasis">Tecnologias:</strong> Java</p>
                     <div class="project-buttons">
-                        <a href="https://meudeploy.com" target="_blank" class="project-btn">
+                        <a href="https://meudeploy.com" target="_blank" rel="noopener noreferrer" class="project-btn">
                             Deploy
                         </a>
-                        <a href="https://github.com/seuusuario/repositorio" target="_blank" class="project-btn">
+                        <a href="https://github.com/Bruno-Pimenta/Desafio-Vai-Nu-Bank" target="_blank" rel="noopener noreferrer" class="project-btn">
                             GitHub
                         </a>
                     </div>
@@ -158,22 +171,24 @@
             </div>
         </section>
     </main>
-    <footer class="footer-container">
-        <div class="container contacts-elements">
+    <footer class="footer-container roboto-mono-style">
+        <section class="contacts-elements contact-section" id="contact">
             <h1 class="contact-title text-gradient">Contato</h1>
-            <div class="contact-icons-container">
-                <a href=""><img src="./assets/linkedin.svg" alt="Contato pelo LinkedIn"></a>
-                <a href=""><img src="./assets/github.svg" alt="Repositório do GitHub"></a>
-                <a href=""><img src="./assets/whatsapp.svg" alt="Contato pelo WhatsApp"></a>
-            </div>
-        </div>
+            <aside class="contact-icons-container">
+                <a href="https://www.linkedin.com/in/brunohenriquepimenta-softwaredeveloper" target="_blank" rel="noopener noreferrer"><img src="./assets/img/linkedin.svg" alt="Contato pelo LinkedIn"></a>
+                <a href="mailto:henriquepimentabruno@gmail.com" target="_blank" rel="noopener noreferrer"><img src="./assets/img/email.png" alt="Contato pelo e-mail"></a>
+                <a href="" target="_blank" rel="noopener noreferrer"><img src="./assets/img/whatsapp.svg" alt="Contato pelo WhatsApp"></a>
+            </aside>
+        </section>
         <div class="container footer-elements">
             <span class="logo-name-nav">
-                    <span class="nav-name-style">B</span>runo
-                    <span class="nav-name-style">H</span>enrique
+                <span class="nav-name-style">B</span>runo
+                <span class="nav-name-style">H</span>enrique
             </span>
-            <p class="copyright-text-footer">&copy; 2025 - Bruno Henrique. Todos os direitos reservados</p>
+            <p class="copyright-text-footer">&copy; 2025 - Bruno Henrique Pimenta. Todos os direitos reservados</p>
         </div>
     </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="app.js"></script>
 </html>
