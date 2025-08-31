@@ -20,7 +20,7 @@ const SearchField = ({ onSearch }) => {
     () =>
       debounce((value) => {
         onSearch(value);
-      }, 2000), // delay de 2s
+      }, 1000), // delay de 2s
     [onSearch]
   );
 
