@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Filme from "./Filme";
 import BotaoFavoritar from "./BotaoFavoritar";
+import BotaoDetalhes from "./BotaoDetalhes";
 
 const Favoritos = ({ favorites, setFavorites }) => {
   const [movies, setMovies] = useState([]);
@@ -72,6 +73,7 @@ const Favoritos = ({ favorites, setFavorites }) => {
                 favorites={favorites}
                 setFavorites={setFavorites}
               />
+              <BotaoDetalhes id={movie.id} /> 
             </div>
           );
         })
