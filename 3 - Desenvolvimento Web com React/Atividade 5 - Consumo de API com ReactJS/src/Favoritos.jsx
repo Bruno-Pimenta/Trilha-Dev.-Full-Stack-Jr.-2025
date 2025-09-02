@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import Filme from "./Filme";
 import BotaoFavoritar from "./BotaoFavoritar";
 import BotaoDetalhes from "./BotaoDetalhes";
-import { useParams, useNavigate } from "react-router-dom";
 
 const Favoritos = ({ favorites, setFavorites }) => {
   const [movies, setMovies] = useState([]);
@@ -10,10 +9,9 @@ const Favoritos = ({ favorites, setFavorites }) => {
   const [loading, setLoading] = useState(true);
   const [page, setPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
-  const navigate = useNavigate();
 
   const apiKey = import.meta.env.VITE_API_KEY;
-  const itemsPerPage = 8;
+  const itemsPerPage = 8; //Não uso os 20 filmes por página padrão da paginação do TMDB aqui em Favoritos
 
   // Atualiza localStorage sempre que favorites mudar
   useEffect(() => {
@@ -111,9 +109,6 @@ const Favoritos = ({ favorites, setFavorites }) => {
             >
               Próxima
             </button>
-          </div>
-          <div>
-            <button onClick={() => navigate(-1)}>Voltar</button>
           </div>
         </>
       ) : (

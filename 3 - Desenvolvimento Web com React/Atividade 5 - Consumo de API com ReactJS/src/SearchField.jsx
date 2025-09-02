@@ -20,7 +20,7 @@ const SearchField = ({ onSearch }) => {
     () =>
       debounce((value) => {
         onSearch(value);
-      }, 1000), // delay de 2s
+      }, 1000), // delay de 1s
     [onSearch]
   );
 
@@ -33,12 +33,12 @@ const SearchField = ({ onSearch }) => {
   return (
     <>
         <label for="searchID">
-            Digite aqui para realizar uma busca
+            Realize sua busca aqui
             <input
                 type="text"
                 value={texto}
                 onChange={handleChange}
-                placeholder="Digite sua busca..."
+                placeholder="Digite o nome do filme"
                 id="searchID"
             />
         </label>

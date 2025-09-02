@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route, useNavigate, useLocation } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Filmes from "./Filmes";
 import Favoritos from "./Favoritos";
-import SearchField from "./SearchField";
+import Header from "./Header";
 import FilmeDetalhes from "./FilmeDetalhes";
+import "./css/App.css"; 
 
 const App = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -17,26 +18,22 @@ const App = () => {
     }
   });
 
-  // sempre que favoritos mudar, atualizar o localStorage
   useEffect(() => {
     localStorage.setItem("favorites", JSON.stringify(favorites));
   }, [favorites]);
 
   return (
-    <Router>
-      
+    <Router className="main-container">
+      <Header searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       <Routes>
         <Route
           path="/"
           element={
-            <>
-              <Header searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
-              <Filmes
-                term={searchTerm}
-                favorites={favorites}
-                setFavorites={setFavorites}
-              />
-            </>
+            <Filmes
+              term={searchTerm}
+              favorites={favorites}
+              setFavorites={setFavorites}
+            />
           }
         />
         <Route
@@ -53,31 +50,6 @@ const App = () => {
         />
       </Routes>
     </Router>
-  );
-};
-
-// 🔹 Header com regra: só mostra botões na página inicial
-const Header = ({ searchTerm, setSearchTerm }) => {
-  const navigate = useNavigate();
-  const location = useLocation();
-
-  // 🔹 Sempre que sair da página inicial, limpar busca
-  useEffect(() => {
-    if (location.pathname !== "/") {
-      setSearchTerm("");
-    }
-  }, [location.pathname, setSearchTerm]);
-
-  return (
-    <div style={{ display: "flex", gap: "1rem", marginBottom: "1rem" }}>
-      <SearchField onSearch={setSearchTerm} />
-      {location.pathname === "/" && (
-        <>
-          <button onClick={() => navigate("/")}>Início</button>
-          <button onClick={() => navigate("/favoritos")}>Favoritos</button>
-        </>
-      )}
-    </div>
   );
 };
 

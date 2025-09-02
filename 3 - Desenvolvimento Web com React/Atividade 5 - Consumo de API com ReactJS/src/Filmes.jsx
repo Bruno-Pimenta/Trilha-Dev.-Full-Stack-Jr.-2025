@@ -3,6 +3,7 @@ import axios from "axios";
 import Filme from "./Filme";
 import BotaoFavoritar from "./BotaoFavoritar";
 import BotaoDetalhes from "./BotaoDetalhes";
+import "./css/Filmes.css"; 
 
 const Filmes = ({ term, favorites, setFavorites }) => {
   const [movies, setMovies] = useState([]);
@@ -25,7 +26,7 @@ const Filmes = ({ term, favorites, setFavorites }) => {
 
       const response = await axios.get(url);
       setMovies(response.data.results || []);
-      setTotalPages(response.data.total_pages); // salva total de páginas
+      setTotalPages(response.data.total_pages);
     } catch (e) {
       setError(`Erro ao carregar os filmes: ${e.message}`);
       setMovies([]);
@@ -35,9 +36,8 @@ const Filmes = ({ term, favorites, setFavorites }) => {
 
   useEffect(() => {
     getMovies();
-  }, [term, page]); // quando mudar busca ou página, carrega de novo
+  }, [term, page]);
 
-  // Salvar favoritos sempre que mudar
   useEffect(() => {
     localStorage.setItem("favorites", JSON.stringify(favorites));
   }, [favorites]);
@@ -48,24 +48,25 @@ const Filmes = ({ term, favorites, setFavorites }) => {
 
   if (loading) return <p>Carregando filmes...</p>;
   if (error) return <p>{error}</p>;
+  if (movies.length === 0) return <p>Nenhum filme encontrado com o termo buscado.</p>;
 
   return (
     <>
-      {movies.length > 0 ? (
-        <>
-          {movies.map((movie) => {
-            const releaseDate = movie.release_date || "0000-00-00";
-            const [year, month, day] = releaseDate.split("-");
+      <div className="movies-grid">
+        {movies.map((movie) => {
+          const releaseDate = movie.release_date || "0000-00-00";
+          const [year, month, day] = releaseDate.split("-");
 
-            return (
-              <div key={movie.id}>
-                <Filme
-                  title={movie.title}
-                  poster_path={movie.poster_path}
-                  release_day={day}
-                  release_month={month}
-                  release_year={year}
-                />
+          return (
+            <div className="movie-item" key={movie.id}>
+              <Filme
+                title={movie.title}
+                poster_path={movie.poster_path}
+                release_day={day}
+                release_month={month}
+                release_year={year}
+              />
+              <div className="buttons-align">
                 <BotaoFavoritar
                   movie={movie}
                   favorites={favorites}
@@ -73,31 +74,28 @@ const Filmes = ({ term, favorites, setFavorites }) => {
                 />
                 <BotaoDetalhes id={movie.id} />
               </div>
-            );
-          })}
+            </div>
+          );
+        })}
+      </div>
 
-          
-          <div style={{ marginTop: "20px" }}>
-            <button
-              disabled={page === 1}
-              onClick={() => setPage((prev) => prev - 1)}
-            >
-              Anterior
-            </button>
-            <span style={{ margin: "0 10px" }}>
-              Página {page} de {totalPages}
-            </span>
-            <button
-              disabled={page === totalPages}
-              onClick={() => setPage((prev) => prev + 1)}
-            >
-              Próxima
-            </button>
-          </div>
-        </>
-      ) : (
-        <p>Nenhum filme encontrado.</p>
-      )}
+      <div style={{ marginTop: "20px" }}>
+        <button
+          disabled={page === 1}
+          onClick={() => setPage((prev) => prev - 1)}
+        >
+          Anterior
+        </button>
+        <span style={{ margin: "0 10px" }}>
+          Página {page} de {totalPages}
+        </span>
+        <button
+          disabled={page === totalPages}
+          onClick={() => setPage((prev) => prev + 1)}
+        >
+          Próxima
+        </button>
+      </div>
     </>
   );
 };
