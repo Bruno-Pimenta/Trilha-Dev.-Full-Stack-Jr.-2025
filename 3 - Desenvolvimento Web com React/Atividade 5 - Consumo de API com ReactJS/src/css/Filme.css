@@ -1,20 +1,38 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 .movie-container {
   max-width: 100%;
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  align-items:center;
+  padding: 10%;
 }
 
 .movie-container img{
-  max-width: 100%; /* imagem nunca ultrapassa container */
+  max-width: 100%;
+  padding: 5%;
   height: auto;
   display: block;
 }
 
 .title-align{
-    text-align: center;
-    font-size: 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  height: 20%;
+  overflow:visible;
+  color: rgb(238, 32, 32);
+}
+
+.text-emphasis{
+  font-weight: bolder;
+  font-size: 1rem;
 }
 
 

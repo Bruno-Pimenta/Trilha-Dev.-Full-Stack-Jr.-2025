@@ -67,7 +67,7 @@ const Filmes = ({ term, favorites, setFavorites }) => {
                 release_year={year}
               />
               <div className="buttons-align">
-                <BotaoFavoritar
+                <BotaoFavoritar className="movies-button"
                   movie={movie}
                   favorites={favorites}
                   setFavorites={setFavorites}

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./css/BotaoFavoritar.css"; 
 
 const BotaoFavoritar = ({ movie, favorites, setFavorites }) => {
   const [message, setMessage] = useState("Marcar como favorito");
@@ -19,7 +20,7 @@ const BotaoFavoritar = ({ movie, favorites, setFavorites }) => {
     }
   }
 
-  return <button onClick={toggleFavorite}>{message}</button>;
+  return <button className="favorite-button" onClick={toggleFavorite}>{message}</button>;
 };
 
 export default BotaoFavoritar;

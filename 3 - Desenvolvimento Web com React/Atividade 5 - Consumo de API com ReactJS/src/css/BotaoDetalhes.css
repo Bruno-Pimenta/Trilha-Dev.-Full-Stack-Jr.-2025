@@ -1,0 +1,12 @@
+.button-details{
+  width: 40%;
+  max-width: 40%;
+  border-radius: 7%;
+  padding: 8%;
+  color: black;  
+  font-size: 0.8rem;
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
