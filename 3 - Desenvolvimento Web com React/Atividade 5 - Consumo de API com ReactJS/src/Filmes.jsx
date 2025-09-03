@@ -3,6 +3,7 @@ import axios from "axios";
 import Filme from "./Filme";
 import BotaoFavoritar from "./BotaoFavoritar";
 import BotaoDetalhes from "./BotaoDetalhes";
+import Paginacao from "./Paginacao"; 
 import "./css/Filmes.css"; 
 
 const Filmes = ({ term, favorites, setFavorites }) => {
@@ -67,7 +68,7 @@ const Filmes = ({ term, favorites, setFavorites }) => {
                 release_year={year}
               />
               <div className="buttons-align">
-                <BotaoFavoritar className="movies-button"
+                <BotaoFavoritar
                   movie={movie}
                   favorites={favorites}
                   setFavorites={setFavorites}
@@ -79,23 +80,11 @@ const Filmes = ({ term, favorites, setFavorites }) => {
         })}
       </div>
 
-      <div style={{ marginTop: "20px" }}>
-        <button
-          disabled={page === 1}
-          onClick={() => setPage((prev) => prev - 1)}
-        >
-          Anterior
-        </button>
-        <span style={{ margin: "0 10px" }}>
-          Página {page} de {totalPages}
-        </span>
-        <button
-          disabled={page === totalPages}
-          onClick={() => setPage((prev) => prev + 1)}
-        >
-          Próxima
-        </button>
-      </div>
+      <Paginacao 
+        page={page} 
+        totalPages={totalPages} 
+        onPageChange={setPage} 
+      />  
     </>
   );
 };

@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import Filme from "./Filme";
 import BotaoFavoritar from "./BotaoFavoritar";
 import BotaoDetalhes from "./BotaoDetalhes";
+import Paginacao from "./Paginacao"; 
+import "./css/Favoritos.css"; 
 
 const Favoritos = ({ favorites, setFavorites }) => {
   const [movies, setMovies] = useState([]);
@@ -70,46 +72,39 @@ const Favoritos = ({ favorites, setFavorites }) => {
     <>
       {movies.length > 0 ? (
         <>
-          {paginatedMovies.map((movie) => {
-            const releaseDate = movie.release_date || "0000-00-00";
-            const [year, month, day] = releaseDate.split("-");
+          <div className="movies-grid">
+            {paginatedMovies.map((movie) => {
+              const releaseDate = movie.release_date || "0000-00-00";
+              const [year, month, day] = releaseDate.split("-");
 
-            return (
-              <div key={movie.id}>
-                <Filme
-                  title={movie.title}
-                  poster_path={movie.poster_path}
-                  release_day={day}
-                  release_month={month}
-                  release_year={year}
-                />
-                <BotaoFavoritar
-                  movie={movie}
-                  favorites={favorites}
-                  setFavorites={setFavorites}
-                />
-                <BotaoDetalhes id={movie.id} />
-              </div>
-            );
-          })}
-
-          <div style={{ marginTop: "20px" }}>
-            <button
-              disabled={page === 1}
-              onClick={() => setPage((prev) => prev - 1)}
-            >
-              Anterior
-            </button>
-            <span style={{ margin: "0 10px" }}>
-              Página {page} de {totalPages}
-            </span>
-            <button
-              disabled={page === totalPages}
-              onClick={() => setPage((prev) => prev + 1)}
-            >
-              Próxima
-            </button>
+              return (
+                <div className="movie-item" key={movie.id}>
+                  <Filme
+                    title={movie.title}
+                    poster_path={movie.poster_path}
+                    release_day={day}
+                    release_month={month}
+                    release_year={year}
+                  />
+                  <div className="buttons-align">
+                    <BotaoFavoritar
+                      movie={movie}
+                      favorites={favorites}
+                      setFavorites={setFavorites}
+                    />
+                    <BotaoDetalhes id={movie.id} />
+                  </div>
+                </div>
+              );
+            })}
           </div>
+
+          
+          <Paginacao 
+            page={page} 
+            totalPages={totalPages} 
+            onPageChange={setPage} 
+          />  
         </>
       ) : (
         <p>Nenhum filme encontrado.</p>

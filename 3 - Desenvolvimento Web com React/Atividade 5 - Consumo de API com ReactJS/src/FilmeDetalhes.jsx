@@ -58,24 +58,24 @@ const FilmeDetalhes = ({ favorites, setFavorites }) => {
       </div>
       <div>
         <h2>{movie.title}</h2>
-      <p>Título original: {movie.original_title}</p>
-      <p>Data de lançamento: {day+"/"+month+"/"+year}</p>
-      <p>Sinopse: {movie.overview}</p>
-      <p>Diretor: {director}</p>
-      <p>Nota média:{movie.vote_average}</p>
-      
-      {cast.length > 0 && (
-        <div style={{ marginTop: "1rem" }}>
-          <h3>Elenco principal:</h3>
-          <ul>
-            {cast.slice(0, 10).map((actor) => (
-              <li key={actor.cast_id}>
-                {actor.name} como {actor.character}
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
+        <p>Título original: {movie.original_title}</p>
+        <p>Data de lançamento: {day+"/"+month+"/"+year}</p>
+        <p>Sinopse: {movie.overview}</p>
+        <p>Diretor: {director}</p>
+        <p>Nota média:{movie.vote_average}</p>
+        
+        {cast.length > 0 && (
+          <div style={{ marginTop: "1rem" }}>
+            <h3>Elenco principal:</h3>
+            <ul>
+              {cast.slice(0, 10).map((actor) => (
+                <li key={actor.cast_id}>
+                  {actor.name} como {actor.character}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
       </div>
       <BotaoFavoritar
         movie={movie}
