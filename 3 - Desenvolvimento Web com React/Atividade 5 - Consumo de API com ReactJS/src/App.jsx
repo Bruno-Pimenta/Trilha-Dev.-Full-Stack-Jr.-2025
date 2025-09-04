@@ -24,7 +24,7 @@ const App = () => {
 
   return (
     <Router className="main-container">
-      <Header searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+      <Header searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
       <Routes>
         <Route
           path="/"

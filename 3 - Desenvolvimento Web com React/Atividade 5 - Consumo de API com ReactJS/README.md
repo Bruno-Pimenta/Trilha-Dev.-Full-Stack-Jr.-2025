@@ -1,12 +1,81 @@
-# React + Vite
+# 🎬 Atividade 5 - Consumo de API com ReactJS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Visão Geral
 
-Currently, two official plugins are available:
+Este projeto é uma aplicação React criada com Vite que consome a API pública do TMDB.
+A aplicação permite que usuários busquem filmes, visualizem informações detalhadas e montem uma lista personalizada de favoritos, com persistência no navegador via localStorage.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Funcionalidades
 
-## Expanding the ESLint configuration
+### 🔍 Página de Busca
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Campo de texto para o usuário digitar o termo da busca.
+
+Exibição da lista de resultados contendo:
+
+* Pôster
+* Título
+* Ano
+* Botão para ver detalhes
+* Botão para marcar como favorito
+
+### 📄 Paginação
+
+Navegação entre páginas de resultados.
+
+### 🎥 Página de Detalhes
+
+Exibição completa das informações de um filme:
+
+* Pôster
+* Título 
+* Sinopse
+* Elenco
+* Diretor
+* Avaliação
+* Botão para marcar como favorito
+
+### ⭐ Lista de Favoritos
+
+Botão para adicionar/remover filmes da lista de favoritos.
+
+* Persistência dos favoritos utilizando localStorage.
+
+### ⚙️ Tratamento de Erros & Loading
+
+* Indicador de carregamento enquanto a API é consultada.
+* Mensagens de erro quando ocorrerem falhas.
+
+### 🛠️ Tecnologias Utilizadas
+
+* React
+* Vite
+* TMDB API
+* LocalStorage (para persistência dos favoritos)
+
+### ⚙️ Configuração e Execução
+
+1️⃣ Clonar o repositório
+
+`git clone https://github.com/Bruno-Pimenta/Trilha-Dev.-Full-Stack-Jr.-2025.git`
+
+2️⃣ Instalar dependências
+
+`npm install`
+
+3️⃣ Configurar variáveis de ambiente
+
+No arquivo .env na raiz do projeto, adicione sua chave da API:
+`VITE_API_KEY=SUA_CHAVE_AQUI`
+
+4️⃣ Rodar a aplicação em modo de desenvolvimento
+`npm run dev`
+
+### A aplicação ficará disponível em:
+👉 http://localhost:5173
+
+### 📌 Observações
+
+É necessário possuir uma chave válida da API TMDB.
+
+Favoritos ficam salvos localmente no navegador e permanecem após o fechamento da aplicação.

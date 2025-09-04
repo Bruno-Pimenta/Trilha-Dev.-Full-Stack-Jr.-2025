@@ -47,44 +47,46 @@ const Filmes = ({ term, favorites, setFavorites }) => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, [page]);
 
-  if (loading) return <p>Carregando filmes...</p>;
-  if (error) return <p>{error}</p>;
-  if (movies.length === 0) return <p>Nenhum filme encontrado com o termo buscado.</p>;
+  if (loading) return <p className="movie-message-text">Carregando filmes...</p>;
+  if (error) return <p className="movie-message-text">{error}</p>;
+  if (movies.length === 0) return <p className="movie-message-text">Nenhum filme encontrado com o termo buscado.</p>;
 
   return (
     <>
-      <div className="movies-grid">
-        {movies.map((movie) => {
-          const releaseDate = movie.release_date || "0000-00-00";
-          const [year, month, day] = releaseDate.split("-");
+      <main className="main-background">
+        <div className="movies-grid">
+          {movies.map((movie) => {
+            const releaseDate = movie.release_date || "0000-00-00";
+            const [year, month, day] = releaseDate.split("-");
 
-          return (
-            <div className="movie-item" key={movie.id}>
-              <Filme
-                title={movie.title}
-                poster_path={movie.poster_path}
-                release_day={day}
-                release_month={month}
-                release_year={year}
-              />
-              <div className="buttons-align">
-                <BotaoFavoritar
-                  movie={movie}
-                  favorites={favorites}
-                  setFavorites={setFavorites}
+            return (
+              <div className="movie-item" key={movie.id}>
+                <Filme
+                  title={movie.title}
+                  poster_path={movie.poster_path}
+                  release_day={day}
+                  release_month={month}
+                  release_year={year}
                 />
-                <BotaoDetalhes id={movie.id} />
+                <div className="buttons-align">
+                  <BotaoFavoritar
+                    movie={movie}
+                    favorites={favorites}
+                    setFavorites={setFavorites}
+                  />
+                  <BotaoDetalhes id={movie.id} />
+                </div>
               </div>
-            </div>
-          );
-        })}
-      </div>
+            );
+          })}
+        </div>
 
-      <Paginacao 
-        page={page} 
-        totalPages={totalPages} 
-        onPageChange={setPage} 
-      />  
+        <Paginacao 
+          page={page} 
+          totalPages={totalPages} 
+          onPageChange={setPage} 
+        />  
+      </main>
     </>
   );
 };

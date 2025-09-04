@@ -4,6 +4,18 @@
     padding: 0;
 }
 
+:root {
+    --black-glossy: #0d0d0d;  
+    --black-matte: #1a1a1a;    
+    --red-accent: #e63946;     
+    --pink-accent: #ff4d6d;   
+    --aqua-accent: #00d9d9;    
+}
+
+.main-background{
+    background-color: var(--black-glossy);
+}
+
 .main-container{
     width: 100%;
     max-width: 100%;

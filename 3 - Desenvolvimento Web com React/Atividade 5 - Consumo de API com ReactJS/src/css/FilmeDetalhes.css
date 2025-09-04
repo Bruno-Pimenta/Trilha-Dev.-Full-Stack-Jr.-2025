@@ -7,6 +7,8 @@
   max-width: 94%;
   margin: 0 auto; 
   box-sizing: border-box;
+  color: #FFF;
+  background-color: var(--black-matte);
 }
 
 .movie-details-container {
@@ -46,10 +48,23 @@
 
 .info-text-emphasis {
   font-weight: bold;
+  color: var(--red-accent);
 }
 
 h2, h3, p, li {
   margin-bottom: 1rem;
+}
+
+p, li {
+  font-size: 1.2rem;
+}
+
+h2{
+  font-size: 2.1rem;
+}
+
+h3{
+   font-size: 1.7rem;
 }
 
 ul {
@@ -95,4 +110,14 @@ ul {
   .movie-details-favorite-button {
     max-width: 80%;
   }
+}
+
+.movie-message-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  background-color: var(--black-glossy);
+  color: var(--red-accent);
+  height: 100vh;
 }

@@ -1,7 +1,6 @@
-// Header.jsx
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import SearchField from "./SearchField";
+import "./css/Header.css"; 
 
 const Header = ({ searchTerm, setSearchTerm }) => {
   const location = useLocation();
@@ -14,33 +13,33 @@ const Header = ({ searchTerm, setSearchTerm }) => {
   }, [location.pathname, setSearchTerm]);
 
   return (
-    <header style={{ marginBottom: "1rem" }}>
-      <h1>API TMDB</h1>
-      <nav>
-        <ul style={{ display: "flex", gap: "1rem", listStyle: "none", padding: 0 }}>
-          <li>
-            <a href="/">Início</a>
-          </li>
-          <li>
-            <a href="/favoritos">Favoritos</a>
-          </li>
-          {(location.pathname === "/favoritos" || location.pathname.startsWith("/filme/")) && (
-            <li>
-              <a
-                href="#"
-                onClick={(e) => {
-                  e.preventDefault();
-                  window.history.back();
-                }}
-              >
-                Voltar
-              </a>
-            </li>
-          )}
-        </ul>
-      </nav>
+    <header className="header-container main-background">
+      <section className="header-section-container">
+        <div className="title-search-container">
+          <h1 className="header-title">API TMDB</h1>
 
-      {location.pathname === "/" && <SearchField onSearch={setSearchTerm} />}
+          {location.pathname === "/" && (
+            <input
+              type="text"
+              placeholder="Buscar filme..."
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              className="search-input"
+            />
+          )}
+        </div>
+
+        <nav>
+          <ul className="itens-menu-container">
+            <li>
+              <a href="/">Início</a>
+            </li>
+            <li>
+              <a href="/favoritos">Favoritos</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
     </header>
   );
 };

@@ -3,7 +3,7 @@ import "./css/Paginacao.css";
 
 const Paginacao = ({ page, totalPages, onPageChange }) => {
   return (
-    <div className="pagination">
+    <div className="pagination pagination-text">
       <button
         disabled={page === 1}
         onClick={() => onPageChange(page - 1)}
