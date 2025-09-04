@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import BotaoFavoritar from "./BotaoFavoritar";
+import "./css/FilmeDetalhes.css"
 
 const FilmeDetalhes = ({ favorites, setFavorites }) => {
   const { id } = useParams();
@@ -49,41 +50,46 @@ const FilmeDetalhes = ({ favorites, setFavorites }) => {
   const [year, month, day] = movie.release_date.split("-");
 
   return (
-    <div>
-      <div>
-        <img
-          src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
-          alt={movie.title}
-        />
+    <div className="movie-details-main-container">
+      <div className="movie-details-container">
+        <div className="movie-details-container-poster">
+          <img
+            src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
+            alt={movie.title}
+          />
+        </div>
+        <div className="movie-details-container-info">
+          <h2 className="info-text-emphasis">{movie.title}</h2>
+          <p><span className="info-text-emphasis">Título original: </span> {movie.original_title}</p>
+          <p><span className="info-text-emphasis">Data de lançamento: </span> {day+"/"+month+"/"+year}</p>
+          <p><span className="info-text-emphasis">Sinopse: </span> {movie.overview}</p>
+          <p><span className="info-text-emphasis">Diretor: </span> {director}</p>
+          <p><span className="info-text-emphasis"> Nota média: </span>{movie.vote_average}</p>
+          
+          {cast.length > 0 && (
+            <div>
+              <h3>Elenco principal</h3>
+              <ul>
+                {cast.slice(0, 10).map((actor) => (
+                  <li key={actor.cast_id}>
+                    {actor.name} como {actor.character}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </div>
       </div>
-      <div>
-        <h2>{movie.title}</h2>
-        <p>Título original: {movie.original_title}</p>
-        <p>Data de lançamento: {day+"/"+month+"/"+year}</p>
-        <p>Sinopse: {movie.overview}</p>
-        <p>Diretor: {director}</p>
-        <p>Nota média:{movie.vote_average}</p>
+      <div className="movie-details-container">
+        <div className="movie-details-favorite-button">
+          <BotaoFavoritar
+            movie={movie}
+            favorites={favorites}
+            setFavorites={setFavorites} 
+          />
+        </div>
         
-        {cast.length > 0 && (
-          <div style={{ marginTop: "1rem" }}>
-            <h3>Elenco principal:</h3>
-            <ul>
-              {cast.slice(0, 10).map((actor) => (
-                <li key={actor.cast_id}>
-                  {actor.name} como {actor.character}
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
       </div>
-      <BotaoFavoritar
-        movie={movie}
-        favorites={favorites}
-        setFavorites={setFavorites}
-      />
-
-      
     </div>
   );
 };

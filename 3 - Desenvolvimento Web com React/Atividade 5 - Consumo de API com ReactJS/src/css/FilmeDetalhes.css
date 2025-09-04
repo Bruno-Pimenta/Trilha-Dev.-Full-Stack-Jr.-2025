@@ -1,0 +1,98 @@
+.movie-details-main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 94%;
+  margin: 0 auto; 
+  box-sizing: border-box;
+}
+
+.movie-details-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2% 0;
+  gap: 2%; 
+  box-sizing: border-box;
+}
+
+.movie-details-container-poster {
+  flex: 1;
+  max-width: 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.movie-details-container-poster img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.movie-details-container-info {
+  flex: 1;
+  max-width: 50%;
+  padding: 0 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+
+.info-text-emphasis {
+  font-weight: bold;
+}
+
+h2, h3, p, li {
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.movie-details-favorite-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 40%;
+  margin-top: 1rem;
+}
+
+
+@media (max-width: 900px) {
+  .movie-details-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .movie-details-container-poster,
+  .movie-details-container-info {
+    max-width: 100%;
+    width: 100%;
+    padding: 0;
+  }
+
+  .movie-details-favorite-button {
+    max-width: 60%;
+  }
+}
+
+@media (max-width: 600px) {
+  .movie-details-main-container {
+    max-width: 100%;
+    padding: 0 3%; 
+  }
+
+  .movie-details-favorite-button {
+    max-width: 80%;
+  }
+}
