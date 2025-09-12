@@ -1,0 +1,52 @@
+.button { /* Estilo base do botão */
+  appearance: none; /* Remove estilos nativos */
+  border: 1px solid var(--color-border-strong); /* Borda de alto contraste */
+  padding: 10px 12px; /* Espaçamento interno */
+  border-radius: 12px; /* Cantos arredondados */
+  font-weight: 700; /* Peso do texto */
+  cursor: pointer; /* Cursor de mão */
+  transition: transform 180ms ease, opacity 180ms ease, background 180ms ease, color 180ms ease, border-color 180ms ease; /* Transições */
+  outline: none; /* Remove outline padrão (usaremos focus-visible) */
+} /* Fim de .button */
+
+.button:focus-visible { /* Estilo de foco acessível */
+  outline: 3px solid var(--color-focus); /* Contorno visível */
+  outline-offset: 2px; /* Espaço entre contorno e botão */
+} /* Fim do foco */
+
+.button:disabled, .button[aria-disabled='true'] { /* Estado desabilitado */
+  opacity: 0.6; /* Indica indisponibilidade visualmente */
+  cursor: not-allowed; /* Cursor apropriado */
+} /* Fim do disabled */
+
+.solid { /* Variante sólida do botão */
+  background: var(--color-accent); /* Fundo com cor de destaque */
+  color: #ffffff; /* Texto branco para contraste (≥ 4.5:1) */
+  border-color: var(--color-accent); /* Borda na mesma cor do fundo */
+} /* Fim de .solid */
+
+.solid:hover { /* Hover na variante sólida */
+  transform: translateY(-1px); /* Elevação sutil */
+} /* Fim do hover sólido */
+
+.outline { /* Variante com contorno */
+  background: transparent; /* Fundo transparente */
+  color: var(--color-accent); /* Texto na cor de destaque */
+  border-color: var(--color-accent); /* Borda na cor de destaque */
+} /* Fim de .outline */
+
+.outline:hover { /* Hover na outline */
+  transform: translateY(-1px); /* Elevação suave */
+  background: color-mix(in srgb, var(--color-accent) 10%, transparent); /* Sombra de fundo leve (suporte onde disponível) */
+} /* Fim do hover outline */
+
+.ghost { /* Variante ghost (discreta) */
+  background: var(--color-surface-2); /* Fundo sutil */
+  color: var(--color-fg); /* Texto na cor padrão de texto */
+  border-color: var(--color-border); /* Borda sutil */
+} /* Fim de .ghost */
+
+.ghost:hover { /* Hover na ghost */
+  transform: translateY(-1px); /* Elevação sutil */
+  background: var(--color-surface-3); /* Fundo um pouco mais contrastante */
+} /* Fim do hover ghost */

@@ -1,0 +1,70 @@
+/* Estilos do skeleton loading */
+
+.card {
+  position: relative; /* Necessário para posicionar badges */
+  display: flex; /* Layout flexível */
+  flex-direction: column; /* Empilha conteúdo verticalmente */
+  background: var(--color-surface); /* Cor de superfície do cartão */
+  border: 1px solid var(--color-border); /* Borda sutil */
+  border-radius: 16px; /* Cantos arredondados */
+  overflow: hidden;
+}
+
+.media {
+  width: 100%; /* Ocupa toda a largura do card */
+  aspect-ratio: 1 / 1; /* Garante proporção 1:1 */
+}
+
+.content { /* Área textual do card */
+  padding: 12px; /* Espaçamento interno */
+  display: flex; /* Layout flex */
+  flex-direction: column; /* Empilha verticalmente */
+  gap: 8px; /* Espaçamento entre elementos */
+} /* Fim de .content */
+
+.title,
+.price,
+.rating,
+.button {
+  height: 20px;
+  border-radius: 6px;
+}
+
+.title {
+  width: 80%;
+  height: 24px;
+}
+
+.price {
+  width: 40%;
+}
+
+.rating {
+  width: 60%;
+  height: 18px;
+}
+
+.button {
+  width: 100%;
+  height: 40px;
+  border-radius: 12px;
+}
+
+.skeleton { /* Estilo base do skeleton loading */
+  position: relative; /* Necessário para pseudo-elemento animado */
+  background: var(--color-skeleton); /* Cor de base do skeleton */
+  overflow: hidden; /* Esconde overflow da animação */
+} /* Fim de .skeleton */
+
+.skeleton::after { /* Brilho animado do skeleton */
+  content: ''; /* Cria o pseudo-elemento */
+  position: absolute; /* Posiciona sobre o elemento */
+  inset: 0; /* Ocupa toda a área */
+  transform: translateX(-100%); /* Começa à esquerda */
+  background: linear-gradient(90deg, transparent, var(--color-skeleton-highlight), transparent); /* Gradiente móvel*/
+  animation: shimmer 1.2s infinite; /* Animação contínua */
+} /* Fim do pseudo-elemento */
+
+@keyframes shimmer { /* Define a animação do skeleton */
+  100% { transform: translateX(100%); } /* Move o brilho para a direita */
+} /* Fim da animação */
