@@ -21,8 +21,8 @@ html, body { /* Estilos para html e body */
   --color-surface-3: #e7e7ea; /* Superfície terciária */
   --color-border: #dcdce1; /* Cor de borda sutil */
   --color-border-strong: #bdbdc7; /* Borda de alto contraste */
-  --color-accent: #5b7cfa; /* Cor de destaque (botões/badges) */
-  --color-focus: #ff8f1f; /* Cor do contorno de foco (alto contraste) */
+  --color-accent: #e53935; /* Vermelho vibrante para botões/badges */
+  --color-focus: #8e24aa;  /* Violeta forte para contorno de foco */
   --color-star: #e6b800; /* Cor das estrelas de rating */
   --color-skeleton: #e9e9ee; /* Base do skeleton */
   --color-skeleton-highlight: #ffffffa6; /* Destaque do skeleton */
@@ -40,9 +40,9 @@ html, body { /* Estilos para html e body */
   --color-surface-3: #22242b; /* Superfície terciária escura */
   --color-border: #2a2c34; /* Borda escura sutil */
   --color-border-strong: #3b3e48; /* Borda de alto contraste no escuro */
-  --color-accent: #7aa2ff; /* Destaque ajustado para escuro */
-  --color-focus: #ffd166; /* Foco visível em escuro */
-  --color-star: #ffd166; /* Estrelas visíveis em escuro */
+  --color-accent: #ef5350; /* Vermelho mais claro para contraste no fundo escuro */
+  --color-focus: #ba68c8;  /* Violeta suave e visível em fundo escuro */
+  --color-star:  #f48fb1;  /* Rosa claro que se destaca no tema escuro */
   --color-skeleton: #1c1d24; /* Base do skeleton escuro */
   --color-skeleton-highlight: #2a2c34; /* Destaque do skeleton escuro */
   --shadow-xs: 0 1px 2px rgba(0,0,0,0.4); /* Ajuste de sombras para escuro */
