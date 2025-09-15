@@ -5,7 +5,6 @@ export default function Button({ onAdd, productId, variant = 'solid' }) {
   const [pending, setPending] = useState(false);
 
   const handleClick = () => {
-    // Impede clique se já está pending ou se a variante for ghost
     if (pending || variant === 'ghost') return;
 
     setPending(true);
