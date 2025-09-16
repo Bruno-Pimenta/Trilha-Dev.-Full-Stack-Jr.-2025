@@ -14,6 +14,11 @@
   box-shadow: var(--shadow-md);
 }
 
+.product-card:focus-within { /* Quando algum foco está dentro do card */
+  outline: 3px solid var(--color-focus); /* Contorno de alto contraste */
+  outline-offset: 4px; /* Destaca o foco sem colar no card */
+} /* Fim do foco visível */
+
 .product-media-link {
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;

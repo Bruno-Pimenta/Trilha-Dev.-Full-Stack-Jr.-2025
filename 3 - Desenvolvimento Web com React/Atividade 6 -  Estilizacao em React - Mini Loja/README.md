@@ -1,12 +1,84 @@
-# React + Vite
+# Atividade 6 -  Estilização em React “Mini Loja”
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto foi desenvolvido como atividade proposta pela Trilha Dev. Full Stack Jr. 2025 e tem como objetivo explorar diferentes formas de estilização em aplicações React.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+React 18+
 
-## Expanding the ESLint configuration
+React Router DOM
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+CSS Global
+
+CSS Modules
+
+Tailwind CSS
+
+Styled-Components
+
+## 🎨 Estilização por Rota
+
+Cada rota da aplicação apresenta a mesma interface e funcionalidades, mas estilizada com uma abordagem diferente:
+
+/01 → CSS Global
+
+/02 → CSS Modules
+
+/03 → Tailwind CSS
+
+/04 → Styled-Components
+
+### 👉 Acesse em: http://localhost:5173 seguido da rota correspondente.
+
+## 🛠 Funcionalidades
+
+✅ Botão “Adicionar” funcional – simula a adição de itens.
+
+✅ Toggle de Tema – alterna entre claro/escuro com persistência em localStorage.
+
+✅ Grid de Produtos Responsivo:
+
+≤ 480px → 1 coluna
+
+481px – 768px → 2 colunas
+
+769px – 1024px → 3 colunas
+
+≥ 1025px → 4 colunas
+
+## ⚙️ Configuração e Execução
+
+1️⃣ Clonar o repositório
+
+git clone https://github.com/Bruno-Pimenta/Trilha-Dev.-Full-Stack-Jr.-2025.git
+
+
+2️⃣ Instalar dependências
+
+npm install
+
+3️⃣ Executar o servidor de desenvolvimento
+
+npm run dev
+
+🌐 Acesso
+
+A aplicação estará disponível em: 👉 http://localhost:5173
+
+Exemplos:
+
+http://localhost:5173/01
+ → CSS Global
+
+http://localhost:5173/02
+ → CSS Modules
+
+http://localhost:5173/03
+ → Tailwind CSS
+
+http://localhost:5173/04
+ → Styled-Components
+
+## 📌 Objetivo
+
+O propósito desta atividade é comparar diferentes estratégias de estilização em React, entendendo na prática as suas vantagens, desvantagens e aplicabilidade em projetos reais.

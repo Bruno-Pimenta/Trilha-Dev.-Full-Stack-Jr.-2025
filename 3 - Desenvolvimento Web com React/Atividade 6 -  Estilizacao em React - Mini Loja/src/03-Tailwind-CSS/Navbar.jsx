@@ -8,7 +8,7 @@ export default function Navbar({ cartCount, theme, onToggleTheme }) {
     <header
       className={`fixed top-0 left-0 right-0 h-16 border-b shadow-sm z-50 transition-colors duration-300 ${
         isDark
-          ? "bg-gray-900 border-gray-700 text-gray-100"
+          ? "bg-gray-950 border-gray-800 text-gray-100"
           : "bg-white border-gray-300 text-gray-900"
       }`}
     >
@@ -27,7 +27,7 @@ export default function Navbar({ cartCount, theme, onToggleTheme }) {
             onClick={onToggleTheme}
             className={`relative inline-flex items-center gap-2 h-9 px-3 pl-10 rounded-full border ${
               isDark
-                ? "bg-gray-800 border-gray-600 text-gray-100"
+                ? "bg-gray-900 border-gray-600 text-gray-100"
                 : "bg-gray-100 border-gray-300 text-gray-900"
             }`}
             aria-label={

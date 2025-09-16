@@ -59,12 +59,7 @@
   position: absolute;
   inset: 0;
   transform: translateX(-100%);
-  background: linear-gradient(
-    90deg,
-    transparent,
-    var(--color-skeleton-highlight),
-    transparent
-  );
+  background: linear-gradient(90deg, transparent, var(--color-skeleton-highlight), transparent);
   animation: shimmer 1.2s infinite;
 }
 

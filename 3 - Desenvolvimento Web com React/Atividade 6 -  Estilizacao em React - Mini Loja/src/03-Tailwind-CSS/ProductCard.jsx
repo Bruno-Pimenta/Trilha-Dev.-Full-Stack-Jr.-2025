@@ -22,7 +22,9 @@ export default function ProductCard({
 
   return (
     <article
-      className="relative flex flex-col bg-surface border border-border rounded-2xl shadow-xs transition-transform duration-200 ease-in-out hover:-translate-y-0.5 hover:shadow-md"
+      className="relative flex flex-col bg-surface border-[1px] border-[var(--color-border)] rounded-[16px] shadow-xs
+      transition-transform duration-200 ease-in-out hover:-translate-y-1 hover:shadow-md
+      focus-within:outline focus-within:outline-3 focus-within:outline-purple-800 focus-within:outline-offset-[4px]"
       aria-label={product.title}
     >
       <div className="absolute top-2 left-2 flex gap-1.5 z-20 rounded-full bg-red-600 text-white">
