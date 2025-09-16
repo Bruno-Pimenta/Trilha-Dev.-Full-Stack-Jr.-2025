@@ -1,73 +1,9 @@
 import { useState } from "react";
-import styled, { css } from "styled-components";
-
-const StyledButton = styled.button`
-  appearance: none;
-  border: 1px solid var(--color-border-strong);
-  padding: 10px 12px;
-  border-radius: 12px;
-  font-weight: 700;
-  cursor: pointer;
-  transition: transform 180ms ease, opacity 180ms ease, background 180ms ease,
-    color 180ms ease, border-color 180ms ease;
-  outline: none;
-  text-decoration: none; /* caso use como <a> */
-
-  &:focus-visible {
-    outline: 3px solid var(--color-focus);
-    outline-offset: 2px;
-  }
-
-  &:disabled,
-  &[aria-disabled="true"] {
-    opacity: 0.6;
-    cursor: not-allowed;
-    pointer-events: none;
-  }
-
-  ${({ $variant }) =>
-    $variant === "solid" &&
-    css`
-      background: var(--color-accent);
-      color: #ffffff;
-      border-color: var(--color-accent);
-
-      &:hover:not(:disabled) {
-        transform: translateY(-1px);
-      }
-    `}
-
-  ${({ $variant }) =>
-    $variant === "outline" &&
-    css`
-      background: transparent;
-      color: var(--color-accent);
-      border-color: var(--color-accent);
-
-      &:hover:not(:disabled) {
-        transform: translateY(-1px);
-        background: color-mix(in srgb, var(--color-accent) 10%, transparent);
-      }
-    `}
-
-  ${({ $variant }) =>
-    $variant === "ghost" &&
-    css`
-      background: var(--color-surface-2);
-      color: var(--color-fg);
-      border-color: var(--color-border);
-
-      &:hover:not(:disabled) {
-        transform: translateY(-1px);
-        background: var(--color-surface-3);
-      }
-    `}
-`;
 
 export default function Button({ onAdd, productId, variant = "solid" }) {
   const [pending, setPending] = useState(false);
 
-  const handleClick = (e) => {
+  const handleClick = () => {
     if (pending || variant === "ghost") return;
 
     setPending(true);
@@ -77,30 +13,31 @@ export default function Button({ onAdd, productId, variant = "solid" }) {
     }, 600);
   };
 
-  if (variant === "ghost") {
-    return (
-      <StyledButton
-        type="button"
-        $variant={variant}
-        onClick={handleClick}
-        disabled={pending}
-        aria-disabled="true"
-      >
-        Adicionar
-      </StyledButton>
-    );
+  const baseClasses =
+    "appearance-none border font-bold px-3 py-2 cursor-pointer outline-none transition-transform transition-colors transition-opacity duration-200 ease-in-out focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-2 disabled:opacity-60 disabled:cursor-not-allowed disabled:pointer-events-none rounded-lg";
+
+  let variantClasses = "";
+  if (variant === "solid") {
+    variantClasses =
+      "bg-red-600 text-white border-red-600 hover:bg-red-700 hover:-translate-y-0.5";
+  } else if (variant === "outline") {
+    variantClasses =
+      "bg-transparent text-red-600 border-red-600 hover:bg-red-100 hover:-translate-y-0.5";
+  } else if (variant === "ghost") {
+    variantClasses =
+      "bg-gray-200 text-gray-800 border-gray-300 hover:bg-gray-300 hover:-translate-y-0.5";
   }
 
   return (
-    <StyledButton
+    <button
       type="button"
-      $variant={variant}
+      className={`${baseClasses} ${variantClasses}`}
       onClick={handleClick}
       disabled={pending}
-      aria-disabled={pending}
+      aria-disabled={pending || variant === "ghost"}
       aria-busy={pending}
     >
-      {pending ? "Adicionando…" : "Adicionar"}
-    </StyledButton>
+      {pending && variant !== "ghost" ? "Adicionando…" : "Adicionar"}
+    </button>
   );
 }

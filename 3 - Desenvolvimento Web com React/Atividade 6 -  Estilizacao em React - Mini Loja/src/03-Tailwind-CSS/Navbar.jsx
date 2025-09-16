@@ -1,145 +1,68 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
-import styled from 'styled-components';
-
-const Header = styled.header`
-  position: fixed;
-  top: 0;
-  inset-inline: 0;
-  height: 64px;
-  background: var(--color-surface);
-  border-bottom: 1px solid var(--color-border);
-  z-index: 100;
-  box-shadow: var(--shadow-sm);
-`;
-
-const Content = styled.div`
-  max-width: 1200px;
-  height: 100%;
-  margin: 0 auto;
-  padding: 0 16px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-`;
-
-const Logo = styled(NavLink)`
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  color: var(--color-fg-strong);
-  text-decoration: none;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-`;
-
-const Actions = styled.nav`
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-`;
-
-const ThemeToggle = styled.button`
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  height: 36px;
-  padding: 0 10px 0 40px;
-  background: var(--color-surface-2);
-  border: 1px solid var(--color-border);
-  border-radius: 999px;
-  cursor: pointer;
-  color: var(--color-fg);
-  transition: transform 200ms ease, opacity 200ms ease;
-
-  &:hover {
-    transform: translateY(-1px);
-  }
-
-  &:focus-visible {
-    outline: 3px solid var(--color-focus);
-    outline-offset: 2px;
-  }
-`;
-
-const ThemeText = styled.span`
-  font-size: 14px;
-  font-weight: 600;
-  position: relative;
-  z-index: 1;
-`;
-
-const ThemeThumb = styled.span`
-  position: absolute;
-  top: 50%;
-  left: 4px;
-  transform: translateY(-50%);
-  width: 26px;
-  height: 26px;
-  border-radius: 50%;
-  background: var(--color-accent);
-  box-shadow: var(--shadow-sm);
-  transition: transform 200ms ease;
-
-  [data-theme='dark'] & {
-    transform: translate(10px, -50%);
-  }
-`;
-
-const Cart = styled.div`
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  background: var(--color-surface-2);
-  border: 1px solid var(--color-border);
-  border-radius: 999px;
-  padding: 6px 10px;
-`;
-
-const CartIcon = styled.span`
-  font-size: 16px;
-`;
-
-const CartCount = styled.span`
-  min-width: 1.5em;
-  text-align: center;
-  font-weight: 700;
-  color: var(--color-fg-strong);
-`;
+import React from "react";
+import { NavLink } from "react-router-dom";
 
 export default function Navbar({ cartCount, theme, onToggleTheme }) {
+  const isDark = theme === "dark";
+
   return (
-    <Header>
-      <Content>
-        <Logo to="/" aria-label="Página inicial">
+    <header
+      className={`fixed top-0 left-0 right-0 h-16 border-b shadow-sm z-50 transition-colors duration-300 ${
+        isDark
+          ? "bg-gray-900 border-gray-700 text-gray-100"
+          : "bg-white border-gray-300 text-gray-900"
+      }`}
+    >
+      <div className="max-w-[1200px] mx-auto px-4 h-full flex justify-between items-center gap-4">
+        <NavLink
+          to="/"
+          className="inline-flex items-center gap-2 font-bold"
+          aria-label="Página inicial"
+        >
           <span aria-hidden="true">🛍️</span>
           <strong>Mini Loja</strong>
-        </Logo>
+        </NavLink>
 
-        <Actions aria-label="Ações e navegação">
-          <ThemeToggle
-            type="button"
+        <nav className="inline-flex items-center gap-3">
+          <button
             onClick={onToggleTheme}
+            className={`relative inline-flex items-center gap-2 h-9 px-3 pl-10 rounded-full border ${
+              isDark
+                ? "bg-gray-800 border-gray-600 text-gray-100"
+                : "bg-gray-100 border-gray-300 text-gray-900"
+            }`}
             aria-label={
-              theme === 'dark'
-                ? 'Alternar para tema claro'
-                : 'Alternar para tema escuro'
+              isDark ? "Alternar para tema claro" : "Alternar para tema escuro"
             }
-            aria-pressed={theme === 'dark'}
+            aria-pressed={isDark}
           >
-            <ThemeThumb aria-hidden="true" />
-            <ThemeText>{theme === 'dark' ? 'Escuro' : 'Claro'}</ThemeText>
-          </ThemeToggle>
-          <Cart role="status" aria-live="polite" aria-label="Itens no carrinho">
-            <CartIcon aria-hidden="true">🛒</CartIcon>
-            <CartCount>{cartCount}</CartCount>
-          </Cart>
+            <span
+              className={`absolute top-1/2 left-1 w-6 h-6 rounded-full shadow-sm transform -translate-y-1/2 transition-transform ${
+                isDark ? "translate-x-3 bg-red-600" : "bg-red-600"
+              }`}
+              aria-hidden="true"
+            />
+            <span className="font-semibold text-sm z-10">
+              {isDark ? "Escuro" : "Claro"}
+            </span>
+          </button>
 
-          
-        </Actions>
-      </Content>
-    </Header>
+          <div
+            role="status"
+            aria-live="polite"
+            aria-label="Itens no carrinho"
+            className={`inline-flex items-center gap-1 rounded-full px-2 py-1 border ${
+              isDark
+                ? "bg-gray-800 border-gray-600 text-gray-100"
+                : "bg-gray-100 border-gray-300 text-gray-900"
+            }`}
+          >
+            <span aria-hidden="true">🛒</span>
+            <span className="min-w-[1.5em] text-center font-bold">
+              {cartCount}
+            </span>
+          </div>
+        </nav>
+      </div>
+    </header>
   );
 }

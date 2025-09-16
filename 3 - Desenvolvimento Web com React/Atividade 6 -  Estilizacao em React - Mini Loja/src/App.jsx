@@ -9,17 +9,17 @@ function App() {
     <Routes> {/* Define as rotas principais */}
       <Route // Rota para App01 (todas as sub-rotas de App01 ficam dentro de /01/*)
         path="/01" // Caminho da aplicação de catálogo
-        element={<App01 />} // Renderiza o App02
+        element={<App01 />} // Renderiza o App01
       /> {/* Fim da rota */}
-      <Route // Rota para App01 (todas as sub-rotas de App01 ficam dentro de /01/*)
+      <Route // Rota para App02 (todas as sub-rotas de App01 ficam dentro de /02/*)
         path="/02" // Caminho da aplicação de catálogo
         element={<App02 />} // Renderiza o App02
       /> {/* Fim da rota */}
-      <Route // Rota para App01 (todas as sub-rotas de App01 ficam dentro de /01/*)
+      <Route // Rota para App03 (todas as sub-rotas de App01 ficam dentro de /03/*)
         path="/03" // Caminho da aplicação de catálogo
-        element={<App03 />} // Renderiza o App02
+        element={<App03 />} // Renderiza o App03
       /> {/* Fim da rota */}
-      <Route // Rota para App01 (todas as sub-rotas de App01 ficam dentro de /01/*)
+      <Route // Rota para App04 (todas as sub-rotas de App01 ficam dentro de /04/*)
         path="/04" // Caminho da aplicação de catálogo
         element={<App04 />} // Renderiza o App04
       /> {/* Fim da rota */}
