@@ -10,16 +10,9 @@ public class Produto {
     private long quantidadeEmEstoque;
 
     public Produto(String nome, BigDecimal preco, long quantidadeEmEstoque) {
-        if(nome == null || nome.equals("")){
-            throw new IllegalArgumentException("Nome não pode ser nulo ou vazio.");
-        }
-
-        if(preco.compareTo(BigDecimal.valueOf(0.00))<0 || quantidadeEmEstoque<0){
-            throw new IllegalArgumentException("Preço ou quantidade em estoque não podem ser negativos");
-        }
-        this.nome = nome;
-        this.preco = preco;
-        this.quantidadeEmEstoque = quantidadeEmEstoque;
+        setNome(nome);
+        setPreco(preco);
+        setQuantidadeEmEstoque(quantidadeEmEstoque);
     }
 
     public String getNome() {
