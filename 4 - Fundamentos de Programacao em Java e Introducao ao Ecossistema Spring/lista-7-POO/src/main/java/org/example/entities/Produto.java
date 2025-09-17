@@ -1,5 +1,7 @@
 package org.example.entities;
 
+import org.example.exceptions.DescontoInvalidoException;
+
 import java.math.BigDecimal;
 
 public class Produto {
@@ -58,5 +60,13 @@ public class Produto {
         return  "Nome do produto = " + nome +
                 ", preco = " + preco +
                 ", quantidade em estoque = " + quantidadeEmEstoque;
+    }
+
+    public void aplicarDesconto(double porcentagem) {
+        if(porcentagem<=0 || porcentagem>50){
+            throw new DescontoInvalidoException("O valor do desconto deve estar entre 0 e 50 (inclusive)");
+        }
+        BigDecimal desconto = preco.multiply(BigDecimal.valueOf(porcentagem).divide(BigDecimal.valueOf(100)));
+        setPreco(preco.subtract(desconto));
     }
 }

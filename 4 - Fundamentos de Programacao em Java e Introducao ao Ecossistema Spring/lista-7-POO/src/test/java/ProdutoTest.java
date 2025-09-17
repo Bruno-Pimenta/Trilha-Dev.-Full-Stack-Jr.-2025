@@ -1,4 +1,5 @@
 import org.example.entities.Produto;
+import org.example.exceptions.DescontoInvalidoException;
 import org.junit.Test;
 import java.math.BigDecimal;
 
@@ -74,4 +75,36 @@ public class  ProdutoTest {
         Produto produto = new Produto("Mesa", BigDecimal.valueOf(500.00), 2);
         produto.setQuantidadeEmEstoque(-1);
     }
+    @Test
+    public void deveAplicarDescontoValido() {
+        Produto produto = new Produto("Celular", BigDecimal.valueOf(2000), 5);
+        produto.aplicarDesconto(10); // 10% de desconto (2000 - 200 = 1800)
+        assertEquals(0, produto.getPreco().compareTo(BigDecimal.valueOf(1800)));
+    }
+
+    @Test(expected = DescontoInvalidoException.class)
+    public void deveLancarExcecaoQuandoDescontoForZero() {
+        Produto produto = new Produto("Celular", BigDecimal.valueOf(2000), 5);
+        produto.aplicarDesconto(0);
+    }
+
+    @Test(expected = DescontoInvalidoException.class)
+    public void deveLancarExcecaoQuandoDescontoForNegativo() {
+        Produto produto = new Produto("Celular", BigDecimal.valueOf(2000), 5);
+        produto.aplicarDesconto(-5);
+    }
+
+    @Test(expected = DescontoInvalidoException.class)
+    public void deveLancarExcecaoQuandoDescontoForMaiorQue50() {
+        Produto produto = new Produto("Celular", BigDecimal.valueOf(2000), 5);
+        produto.aplicarDesconto(60);
+    }
+
+    @Test
+    public void deveAplicarDescontoDe50PorCento() {
+        Produto produto = new Produto("Celular", BigDecimal.valueOf(2000), 5);
+        produto.aplicarDesconto(50); // 50% de desconto (2000 - 1000 = 1000)
+        assertEquals(0, produto.getPreco().compareTo(BigDecimal.valueOf(1000)));
+    }
+
 }
