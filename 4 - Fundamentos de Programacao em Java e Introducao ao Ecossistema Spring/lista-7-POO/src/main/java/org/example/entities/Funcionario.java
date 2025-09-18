@@ -21,22 +21,8 @@ public abstract class Funcionario {
         return nome;
     }
 
-    public void setNome(String nome) {
-        if(nome == null || nome.equals("")){
-            throw new IllegalArgumentException("Nome não pode ser nulo ou vazio.");
-        }
-        this.nome = nome;
-    }
-
     public BigDecimal getSalario() {
         return salario;
-    }
-
-    public void setSalario(BigDecimal salario) {
-        if(salario.compareTo(BigDecimal.valueOf(0.00))<0){
-            throw new IllegalArgumentException("Salario não pode ser negativo");
-        }
-        this.salario = salario;
     }
 
     public abstract BigDecimal calcularBonus();
