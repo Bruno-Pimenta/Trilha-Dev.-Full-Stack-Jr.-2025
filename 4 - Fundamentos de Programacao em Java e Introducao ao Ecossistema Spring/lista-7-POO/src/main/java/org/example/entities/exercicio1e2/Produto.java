@@ -1,4 +1,4 @@
-package org.example.entities;
+package org.example.entities.exercicio1e2;
 
 import org.example.exceptions.DescontoInvalidoException;
 

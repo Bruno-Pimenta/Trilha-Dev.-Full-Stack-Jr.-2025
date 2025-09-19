@@ -6,8 +6,19 @@
   <component name="ChangeListManager">
     <list default="true" id="6bffd27f-2a5e-4835-91ac-5e7c9202f773" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/Funcionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/Funcionario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/Bicicleta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/exercicio4/Bicicleta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/Carro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/exercicio4/Carro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/Desenvolvedor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/exercicio3/Desenvolvedor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/Funcionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/exercicio3/Funcionario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/Gerente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/exercicio3/Gerente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/IMeioTransporte.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/exercicio4/IMeioTransporte.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/exercicio1e2/Produto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/Trem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/exercicio4/Trem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/Veiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/exercicio4/Veiculo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/FuncionarioTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FuncionarioTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ProdutoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProdutoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/VeiculoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/VeiculoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/entities/Produto.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../4 - Fundamentos de Programação em Java e Introdução ao Ecossistema Spring/Lista-de-tarefas-7-Java-OO/pom.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../4 - Fundamentos de Programação em Java e Introdução ao Ecossistema Spring/lista-7-POO/pom.xml" beforeDir="false" />
     </list>
@@ -41,67 +52,71 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/Bruno/Documents/Codifica - MaisPraTi/Trilha-Dev.-Full-Stack-Jr.-2025/4 - Fundamentos de Programacao em Java e Introducao ao Ecossistema Spring/lista-7-POO"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Bruno/Documents/Codifica - MaisPraTi/Trilha-Dev.-Full-Stack-Jr.-2025/4 - Fundamentos de Programacao em Java e Introducao ao Ecossistema Spring/lista-7-POO&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="JUnit.VeiculoTest">
-    <configuration name="FuncionarioTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+}</component>
+  <component name="RunManager" selected="JUnit.FormaPagamentoTest">
+    <configuration name="FormaPagamentoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lista-7-POO" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FuncionarioTest" />
+      <option name="MAIN_CLASS_NAME" value="FormaPagamentoTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProdutoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FormaPagamentoTest.deveLancarExcecaoQuandoPixEstaInativo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lista-7-POO" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ProdutoTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="VeiculoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lista-7-POO" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="VeiculoTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="VeiculoTest.carroDeveSerOPrimeiroAlcancarAVelocidaMaximaELancarExcecao" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lista-7-POO" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="VeiculoTest" />
-      <option name="METHOD_NAME" value="carroDeveSerOPrimeiroAlcancarAVelocidaMaximaELancarExcecao" />
+      <option name="MAIN_CLASS_NAME" value="FormaPagamentoTest" />
+      <option name="METHOD_NAME" value="deveLancarExcecaoQuandoPixEstaInativo" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="java in lista-7-POO" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FormaPagamentoTest.deveLancarQuandoNumeroCartaoInvalido" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lista-7-POO" />
-      <option name="TEST_OBJECT" value="directory" />
-      <dir value="$PROJECT_DIR$/src/test/java" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FormaPagamentoTest" />
+      <option name="METHOD_NAME" value="deveLancarQuandoNumeroCartaoInvalido" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FormaPagamentoTest.deveLancarSeAlgumValorForInvalido" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lista-7-POO" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FormaPagamentoTest" />
+      <option name="METHOD_NAME" value="deveLancarSeAlgumValorForInvalido" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FormaPagamentoTest.deveProcessarPagamentoAPosValidacaoEValorPositivo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lista-7-POO" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FormaPagamentoTest" />
+      <option name="METHOD_NAME" value="deveProcessarPagamentoAPosValidacaoEValorPositivo" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.VeiculoTest" />
-        <item itemvalue="JUnit.ProdutoTest" />
-        <item itemvalue="JUnit.FuncionarioTest" />
-        <item itemvalue="JUnit.java in lista-7-POO" />
-        <item itemvalue="JUnit.VeiculoTest.carroDeveSerOPrimeiroAlcancarAVelocidaMaximaELancarExcecao" />
+        <item itemvalue="JUnit.FormaPagamentoTest" />
+        <item itemvalue="JUnit.FormaPagamentoTest.deveProcessarPagamentoAPosValidacaoEValorPositivo" />
+        <item itemvalue="JUnit.FormaPagamentoTest.deveLancarExcecaoQuandoPixEstaInativo" />
+        <item itemvalue="JUnit.FormaPagamentoTest.deveLancarSeAlgumValorForInvalido" />
+        <item itemvalue="JUnit.FormaPagamentoTest.deveLancarQuandoNumeroCartaoInvalido" />
       </list>
     </recent_temporary>
   </component>

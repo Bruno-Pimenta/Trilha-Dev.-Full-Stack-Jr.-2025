@@ -1,20 +1,20 @@
-package org.example.entities;
+package org.example.entities.exercicio4;
 
 import org.example.exceptions.VeiculoParadoException;
 import org.example.exceptions.VelocidadeMaximaAtingidaException;
 
-public class Bicicleta extends Veiculo implements IMeioTransporte{
-    private final int VELOCIDADEMAXIMAEMMETROSPORSEGUNDO = 8;
-    private final int ACELERACAOEMMETROSPORSEGUNDO = 1;
-    private final int DESACELERACAOMETROSPORSEGUNDO = -3;
+public class Carro extends Veiculo implements IMeioTransporte{
+    private final int VELOCIDADEMAXIMAEMMETROSPORSEGUNDO = 55;
+    private final int ACELERACAOEMMETROSPORSEGUNDO = 3;
+    private final int DESACELERACAOMETROSPORSEGUNDO = -7;
 
-    public Bicicleta() {
+    public Carro() {
     }
 
     @Override
     public void acelerar() {
         if(super.getDeslocamento()==VELOCIDADEMAXIMAEMMETROSPORSEGUNDO){
-            throw new VelocidadeMaximaAtingidaException("A bicicleta já está na velocidade máxima");
+            throw new VelocidadeMaximaAtingidaException("O carro já está na velocidade máxima");
         }else if(super.getDeslocamento()+ACELERACAOEMMETROSPORSEGUNDO>VELOCIDADEMAXIMAEMMETROSPORSEGUNDO){
             super.setDeslocamento(VELOCIDADEMAXIMAEMMETROSPORSEGUNDO);
         }else{
@@ -25,7 +25,7 @@ public class Bicicleta extends Veiculo implements IMeioTransporte{
     @Override
     public void frear() {
         if(super.getDeslocamento()==0){
-            throw new VeiculoParadoException("A bicicleta já está parada");
+            throw new VeiculoParadoException("O carro já está parado");
         }else if(super.getDeslocamento()+DESACELERACAOMETROSPORSEGUNDO<=0){
             super.setDeslocamento(0);
         }else{
@@ -33,3 +33,4 @@ public class Bicicleta extends Veiculo implements IMeioTransporte{
         }
     }
 }
+

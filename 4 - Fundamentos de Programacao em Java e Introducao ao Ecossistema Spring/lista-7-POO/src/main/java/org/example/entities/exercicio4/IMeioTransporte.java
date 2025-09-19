@@ -1,4 +1,4 @@
-package org.example.entities;
+package org.example.entities.exercicio4;
 
 public interface IMeioTransporte {
     public void acelerar();

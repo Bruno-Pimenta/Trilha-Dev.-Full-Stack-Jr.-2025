@@ -1,6 +1,6 @@
-import org.example.entities.Desenvolvedor;
-import org.example.entities.Funcionario;
-import org.example.entities.Gerente;
+import org.example.entities.exercicio3.Desenvolvedor;
+import org.example.entities.exercicio3.Funcionario;
+import org.example.entities.exercicio3.Gerente;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 

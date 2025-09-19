@@ -1,4 +1,4 @@
-import org.example.entities.Produto;
+import org.example.entities.exercicio1e2.Produto;
 import org.example.exceptions.DescontoInvalidoException;
 import org.junit.Test;
 import java.math.BigDecimal;

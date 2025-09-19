@@ -1,6 +1,6 @@
-import org.example.entities.Bicicleta;
-import org.example.entities.Carro;
-import org.example.entities.Trem;
+import org.example.entities.exercicio4.Bicicleta;
+import org.example.entities.exercicio4.Carro;
+import org.example.entities.exercicio4.Trem;
 import org.example.exceptions.VeiculoParadoException;
 import org.example.exceptions.VelocidadeMaximaAtingidaException;
 import org.junit.Test;
