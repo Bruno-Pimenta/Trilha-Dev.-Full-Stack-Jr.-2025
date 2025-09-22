@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6bffd27f-2a5e-4835-91ac-5e7c9202f773" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../4 - Fundamentos de Programação em Java e Introdução ao Ecossistema Spring/Lista-de-tarefas-7-Java-OO/pom.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../4 - Fundamentos de Programação em Java e Introdução ao Ecossistema Spring/lista-7-POO/pom.xml" beforeDir="false" />
     </list>
@@ -48,50 +49,52 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Bruno/Documents/Codifica - MaisPraTi/Trilha-Dev.-Full-Stack-Jr.-2025/4 - Fundamentos de Programacao em Java e Introducao ao Ecossistema Spring/lista-7-POO&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.FormaPagamentoTest">
-    <configuration name="FormaPagamentoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CalculoFreteLambdasTest.taxaDeEntregaDeveSerGratuitaParaValoresMaioresQue200Reais">
+    <configuration name="CalculoFreteLambdasTest.deveCalcularCorretamentePacParaRJ" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lista-7-POO" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FormaPagamentoTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="InMemoryRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lista-7-POO" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="InMemoryRepositoryTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="InMemoryRepositoryTest.deveApagarCorretamenteEntidadeComIdValido" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lista-7-POO" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="InMemoryRepositoryTest" />
-      <option name="METHOD_NAME" value="deveApagarCorretamenteEntidadeComIdValido" />
+      <option name="MAIN_CLASS_NAME" value="CalculoFreteLambdasTest" />
+      <option name="METHOD_NAME" value="deveCalcularCorretamentePacParaRJ" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InMemoryRepositoryTest.deveRetornarCorretamenteEntidadeComIdValido" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CalculoFreteLambdasTest.deveCalcularCorretamentePacParaSP" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lista-7-POO" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="InMemoryRepositoryTest" />
-      <option name="METHOD_NAME" value="deveRetornarCorretamenteEntidadeComIdValido" />
+      <option name="MAIN_CLASS_NAME" value="CalculoFreteLambdasTest" />
+      <option name="METHOD_NAME" value="deveCalcularCorretamentePacParaSP" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InMemoryRepositoryTest.deveRetornarCorretamenteTodosProdutosCadastrados" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CalculoFreteLambdasTest.deveCalcularCorretamenteRetiradaNaLojaParaSP" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lista-7-POO" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="InMemoryRepositoryTest" />
-      <option name="METHOD_NAME" value="deveRetornarCorretamenteTodosProdutosCadastrados" />
+      <option name="MAIN_CLASS_NAME" value="CalculoFreteLambdasTest" />
+      <option name="METHOD_NAME" value="deveCalcularCorretamenteRetiradaNaLojaParaSP" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CalculoFreteLambdasTest.deveCalcularCorretamenteSedexParaMG" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lista-7-POO" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CalculoFreteLambdasTest" />
+      <option name="METHOD_NAME" value="deveCalcularCorretamenteSedexParaMG" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CalculoFreteLambdasTest.taxaDeEntregaDeveSerGratuitaParaValoresMaioresQue200Reais" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lista-7-POO" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CalculoFreteLambdasTest" />
+      <option name="METHOD_NAME" value="taxaDeEntregaDeveSerGratuitaParaValoresMaioresQue200Reais" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -99,11 +102,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FormaPagamentoTest" />
-        <item itemvalue="JUnit.InMemoryRepositoryTest" />
-        <item itemvalue="JUnit.InMemoryRepositoryTest.deveRetornarCorretamenteTodosProdutosCadastrados" />
-        <item itemvalue="JUnit.InMemoryRepositoryTest.deveApagarCorretamenteEntidadeComIdValido" />
-        <item itemvalue="JUnit.InMemoryRepositoryTest.deveRetornarCorretamenteEntidadeComIdValido" />
+        <item itemvalue="JUnit.CalculoFreteLambdasTest.taxaDeEntregaDeveSerGratuitaParaValoresMaioresQue200Reais" />
+        <item itemvalue="JUnit.CalculoFreteLambdasTest.deveCalcularCorretamenteRetiradaNaLojaParaSP" />
+        <item itemvalue="JUnit.CalculoFreteLambdasTest.deveCalcularCorretamentePacParaRJ" />
+        <item itemvalue="JUnit.CalculoFreteLambdasTest.deveCalcularCorretamenteSedexParaMG" />
+        <item itemvalue="JUnit.CalculoFreteLambdasTest.deveCalcularCorretamentePacParaSP" />
       </list>
     </recent_temporary>
   </component>
@@ -119,6 +122,8 @@
     <servers />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/lista_7_POO$InMemoryRepositoryTest.ic" NAME="InMemoryRepositoryTest Coverage Results" MODIFIED="1758504525560" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/lista_7_POO$FormaPagamentoTest.ic" NAME="FormaPagamentoTest Coverage Results" MODIFIED="1758504735627" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/lista_7_POO$CarrinhoDeComprasTest.ic" NAME="CarrinhoDeComprasTest Coverage Results" MODIFIED="1758499563485" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
