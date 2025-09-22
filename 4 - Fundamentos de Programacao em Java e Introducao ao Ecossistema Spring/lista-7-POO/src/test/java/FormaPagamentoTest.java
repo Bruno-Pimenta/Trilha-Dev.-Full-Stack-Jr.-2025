@@ -21,13 +21,13 @@ public class FormaPagamentoTest {
     }
     @Test(expected = OperacaoInvalidaException.class)
     public void deveLancarExcecaoQuandoTentarPagarBoletoVencido() {
-        Boleto boleto = new Boleto("12345678901234567890123456789012345678901234567", LocalDate.of(2025, 8, 18));
+        Boleto boleto = new Boleto("12345678901234567890123456789012345678901234567", LocalDate.now().minusDays(1));
         boleto.processarPagamento(BigDecimal.valueOf(1000.00));
     }
 
     @Test(expected = CodigoBoletoInvalidoException.class)
     public void deveLancarExcecaoQuandoCodigoBoletoInvalido() {
-        Boleto boleto = new Boleto("12345678901234567890123456", LocalDate.of(2025, 8, 18));
+        Boleto boleto = new Boleto("12345678901234567890123456", LocalDate.now().minusDays(1));
     }
 
     @Test(expected = NumeroDeCartaoInvalidoException.class)
@@ -39,7 +39,7 @@ public class FormaPagamentoTest {
     public void deveLancarSeAlgumValorForInvalido() {
         Pix pix = new Pix("bruno@gmail.com");
         CartaoCredito cartaoCredito = new CartaoCredito("1234567891234567");
-        Boleto boleto = new Boleto("12345678901234567890123456789012345678901234567", LocalDate.of(2025, 12, 31));
+        Boleto boleto = new Boleto("12345678901234567890123456789012345678901234567", LocalDate.now());
 
         pix.processarPagamento(BigDecimal.valueOf(1000.00));
         cartaoCredito.processarPagamento(BigDecimal.valueOf(500.00));
@@ -50,7 +50,7 @@ public class FormaPagamentoTest {
     public void deveProcessarPagamentoAPosValidacaoEValorPositivo() {
         FormaPagamento pix = new Pix("bruno@gmail.com");
         FormaPagamento cartaoCredito = new CartaoCredito("1234567891234567");
-        FormaPagamento boleto = new Boleto("12345678901234567890123456789012345678901234567", LocalDate.of(2025, 12, 31));
+        FormaPagamento boleto = new Boleto("12345678901234567890123456789012345678901234567", LocalDate.now().plusDays(1));
         List<FormaPagamento> listaDePagamentos = List.of(pix, cartaoCredito, boleto);
 
         for(FormaPagamento pagamento : listaDePagamentos){

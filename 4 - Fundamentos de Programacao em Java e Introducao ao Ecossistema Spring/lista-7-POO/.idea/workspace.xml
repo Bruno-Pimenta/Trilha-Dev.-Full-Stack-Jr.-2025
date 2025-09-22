@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6bffd27f-2a5e-4835-91ac-5e7c9202f773" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/FormaPagamentoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FormaPagamentoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../4 - Fundamentos de Programação em Java e Introdução ao Ecossistema Spring/Lista-de-tarefas-7-Java-OO/pom.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../4 - Fundamentos de Programação em Java e Introdução ao Ecossistema Spring/lista-7-POO/pom.xml" beforeDir="false" />
     </list>
@@ -18,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -49,51 +48,50 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Bruno/Documents/Codifica - MaisPraTi/Trilha-Dev.-Full-Stack-Jr.-2025/4 - Fundamentos de Programacao em Java e Introducao ao Ecossistema Spring/lista-7-POO&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.CarrinhoDeComprasTest">
-    <configuration name="CarrinhoDeComprasTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.FormaPagamentoTest">
+    <configuration name="FormaPagamentoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lista-7-POO" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CarrinhoDeComprasTest" />
+      <option name="MAIN_CLASS_NAME" value="FormaPagamentoTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CarrinhoDeComprasTest.deveLancarCalcularCorretamenteOValorDosProdutosNoCarrinho" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="InMemoryRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lista-7-POO" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CarrinhoDeComprasTest" />
-      <option name="METHOD_NAME" value="deveLancarCalcularCorretamenteOValorDosProdutosNoCarrinho" />
+      <option name="MAIN_CLASS_NAME" value="InMemoryRepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InMemoryRepositoryTest.deveApagarCorretamenteEntidadeComIdValido" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lista-7-POO" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="InMemoryRepositoryTest" />
+      <option name="METHOD_NAME" value="deveApagarCorretamenteEntidadeComIdValido" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CarrinhoDeComprasTest.deveLancarCalcularCorretamenteOValorDosProdutosNoCarrinhoComCupomDe30PorCento" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="InMemoryRepositoryTest.deveRetornarCorretamenteEntidadeComIdValido" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lista-7-POO" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CarrinhoDeComprasTest" />
-      <option name="METHOD_NAME" value="deveLancarCalcularCorretamenteOValorDosProdutosNoCarrinhoComCupomDe30PorCento" />
+      <option name="MAIN_CLASS_NAME" value="InMemoryRepositoryTest" />
+      <option name="METHOD_NAME" value="deveRetornarCorretamenteEntidadeComIdValido" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CarrinhoDeComprasTest.deveLancarCalcularCorretamenteOValorDosProdutosNoCarrinhoQuandoRemovidoItem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="InMemoryRepositoryTest.deveRetornarCorretamenteTodosProdutosCadastrados" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lista-7-POO" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CarrinhoDeComprasTest" />
-      <option name="METHOD_NAME" value="deveLancarCalcularCorretamenteOValorDosProdutosNoCarrinhoQuandoRemovidoItem" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CarrinhoDeComprasTest.deveLancarExcecaoQuandoValorDaQuantidadeDeItemCarrinhoForNegativoOuZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lista-7-POO" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CarrinhoDeComprasTest" />
-      <option name="METHOD_NAME" value="deveLancarExcecaoQuandoValorDaQuantidadeDeItemCarrinhoForNegativoOuZero" />
+      <option name="MAIN_CLASS_NAME" value="InMemoryRepositoryTest" />
+      <option name="METHOD_NAME" value="deveRetornarCorretamenteTodosProdutosCadastrados" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -101,11 +99,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CarrinhoDeComprasTest" />
-        <item itemvalue="JUnit.CarrinhoDeComprasTest.deveLancarCalcularCorretamenteOValorDosProdutosNoCarrinhoQuandoRemovidoItem" />
-        <item itemvalue="JUnit.CarrinhoDeComprasTest.deveLancarCalcularCorretamenteOValorDosProdutosNoCarrinhoComCupomDe30PorCento" />
-        <item itemvalue="JUnit.CarrinhoDeComprasTest.deveLancarCalcularCorretamenteOValorDosProdutosNoCarrinho" />
-        <item itemvalue="JUnit.CarrinhoDeComprasTest.deveLancarExcecaoQuandoValorDaQuantidadeDeItemCarrinhoForNegativoOuZero" />
+        <item itemvalue="JUnit.FormaPagamentoTest" />
+        <item itemvalue="JUnit.InMemoryRepositoryTest" />
+        <item itemvalue="JUnit.InMemoryRepositoryTest.deveRetornarCorretamenteTodosProdutosCadastrados" />
+        <item itemvalue="JUnit.InMemoryRepositoryTest.deveApagarCorretamenteEntidadeComIdValido" />
+        <item itemvalue="JUnit.InMemoryRepositoryTest.deveRetornarCorretamenteEntidadeComIdValido" />
       </list>
     </recent_temporary>
   </component>
@@ -119,5 +117,8 @@
       <updated>1758126935154</updated>
     </task>
     <servers />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/lista_7_POO$CarrinhoDeComprasTest.ic" NAME="CarrinhoDeComprasTest Coverage Results" MODIFIED="1758499563485" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
