@@ -6,19 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6bffd27f-2a5e-4835-91ac-5e7c9202f773" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/Bicicleta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/exercicio4/Bicicleta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/Carro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/exercicio4/Carro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/Desenvolvedor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/exercicio3/Desenvolvedor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/Funcionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/exercicio3/Funcionario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/Gerente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/exercicio3/Gerente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/IMeioTransporte.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/exercicio4/IMeioTransporte.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/exercicio1e2/Produto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/Trem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/exercicio4/Trem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/Veiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/exercicio4/Veiculo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/FuncionarioTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FuncionarioTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ProdutoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProdutoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/VeiculoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/VeiculoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/entities/Produto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/FormaPagamentoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FormaPagamentoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../4 - Fundamentos de Programação em Java e Introdução ao Ecossistema Spring/Lista-de-tarefas-7-Java-OO/pom.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../4 - Fundamentos de Programação em Java e Introdução ao Ecossistema Spring/lista-7-POO/pom.xml" beforeDir="false" />
     </list>
@@ -31,6 +19,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -60,51 +49,51 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Bruno/Documents/Codifica - MaisPraTi/Trilha-Dev.-Full-Stack-Jr.-2025/4 - Fundamentos de Programacao em Java e Introducao ao Ecossistema Spring/lista-7-POO&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.FormaPagamentoTest">
-    <configuration name="FormaPagamentoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CarrinhoDeComprasTest">
+    <configuration name="CarrinhoDeComprasTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lista-7-POO" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FormaPagamentoTest" />
+      <option name="MAIN_CLASS_NAME" value="CarrinhoDeComprasTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FormaPagamentoTest.deveLancarExcecaoQuandoPixEstaInativo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CarrinhoDeComprasTest.deveLancarCalcularCorretamenteOValorDosProdutosNoCarrinho" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lista-7-POO" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FormaPagamentoTest" />
-      <option name="METHOD_NAME" value="deveLancarExcecaoQuandoPixEstaInativo" />
+      <option name="MAIN_CLASS_NAME" value="CarrinhoDeComprasTest" />
+      <option name="METHOD_NAME" value="deveLancarCalcularCorretamenteOValorDosProdutosNoCarrinho" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FormaPagamentoTest.deveLancarQuandoNumeroCartaoInvalido" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CarrinhoDeComprasTest.deveLancarCalcularCorretamenteOValorDosProdutosNoCarrinhoComCupomDe30PorCento" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lista-7-POO" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FormaPagamentoTest" />
-      <option name="METHOD_NAME" value="deveLancarQuandoNumeroCartaoInvalido" />
+      <option name="MAIN_CLASS_NAME" value="CarrinhoDeComprasTest" />
+      <option name="METHOD_NAME" value="deveLancarCalcularCorretamenteOValorDosProdutosNoCarrinhoComCupomDe30PorCento" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FormaPagamentoTest.deveLancarSeAlgumValorForInvalido" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CarrinhoDeComprasTest.deveLancarCalcularCorretamenteOValorDosProdutosNoCarrinhoQuandoRemovidoItem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lista-7-POO" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FormaPagamentoTest" />
-      <option name="METHOD_NAME" value="deveLancarSeAlgumValorForInvalido" />
+      <option name="MAIN_CLASS_NAME" value="CarrinhoDeComprasTest" />
+      <option name="METHOD_NAME" value="deveLancarCalcularCorretamenteOValorDosProdutosNoCarrinhoQuandoRemovidoItem" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FormaPagamentoTest.deveProcessarPagamentoAPosValidacaoEValorPositivo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CarrinhoDeComprasTest.deveLancarExcecaoQuandoValorDaQuantidadeDeItemCarrinhoForNegativoOuZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lista-7-POO" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FormaPagamentoTest" />
-      <option name="METHOD_NAME" value="deveProcessarPagamentoAPosValidacaoEValorPositivo" />
+      <option name="MAIN_CLASS_NAME" value="CarrinhoDeComprasTest" />
+      <option name="METHOD_NAME" value="deveLancarExcecaoQuandoValorDaQuantidadeDeItemCarrinhoForNegativoOuZero" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -112,11 +101,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FormaPagamentoTest" />
-        <item itemvalue="JUnit.FormaPagamentoTest.deveProcessarPagamentoAPosValidacaoEValorPositivo" />
-        <item itemvalue="JUnit.FormaPagamentoTest.deveLancarExcecaoQuandoPixEstaInativo" />
-        <item itemvalue="JUnit.FormaPagamentoTest.deveLancarSeAlgumValorForInvalido" />
-        <item itemvalue="JUnit.FormaPagamentoTest.deveLancarQuandoNumeroCartaoInvalido" />
+        <item itemvalue="JUnit.CarrinhoDeComprasTest" />
+        <item itemvalue="JUnit.CarrinhoDeComprasTest.deveLancarCalcularCorretamenteOValorDosProdutosNoCarrinhoQuandoRemovidoItem" />
+        <item itemvalue="JUnit.CarrinhoDeComprasTest.deveLancarCalcularCorretamenteOValorDosProdutosNoCarrinhoComCupomDe30PorCento" />
+        <item itemvalue="JUnit.CarrinhoDeComprasTest.deveLancarCalcularCorretamenteOValorDosProdutosNoCarrinho" />
+        <item itemvalue="JUnit.CarrinhoDeComprasTest.deveLancarExcecaoQuandoValorDaQuantidadeDeItemCarrinhoForNegativoOuZero" />
       </list>
     </recent_temporary>
   </component>

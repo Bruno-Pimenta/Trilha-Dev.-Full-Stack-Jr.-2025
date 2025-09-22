@@ -56,9 +56,6 @@ public class FormaPagamentoTest {
         for(FormaPagamento pagamento : listaDePagamentos){
             pagamento.processarPagamento(BigDecimal.valueOf(1000.00));
         }
-
-
     }
-
 
 }
