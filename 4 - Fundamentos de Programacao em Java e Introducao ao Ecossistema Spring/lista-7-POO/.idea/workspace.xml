@@ -6,7 +6,20 @@
   <component name="ChangeListManager">
     <list default="true" id="6bffd27f-2a5e-4835-91ac-5e7c9202f773" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/exercicio1e2/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/exercicio1e2/Produto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/exercicio8/EstrategiaDeEntrega.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/exercicio8/EstrategiaDeEntrega.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/exercicio8/Pac.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/exercicio8/Pac.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/exercicio8/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/exercicio8/Pedido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/exercicio8/RetiradaNaLoja.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/exercicio8/RetiradaNaLoja.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entities/exercicio8/Sedex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entities/exercicio8/Sedex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CalculoFreteLambdasTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/exercicio8PadraoStrategy/CalculoFreteLambdasTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CarrinhoDeComprasTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/exercicio6Imutabilidade/CarrinhoDeComprasTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/FormaPagamentoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/exercicio5Abstracao/FormaPagamentoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/FuncionarioTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/exercicio3Heranca/FuncionarioTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/InMemoryRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/exercicio7Generics/InMemoryRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ProdutoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/exercicio1e2Encapsulamento/ProdutoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/VeiculoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/exercicio4Polimorfismo/VeiculoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ProdutoTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../4 - Fundamentos de Programação em Java e Introdução ao Ecossistema Spring/Lista-de-tarefas-7-Java-OO/pom.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../4 - Fundamentos de Programação em Java e Introdução ao Ecossistema Spring/lista-7-POO/pom.xml" beforeDir="false" />
     </list>
@@ -49,64 +62,84 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Bruno/Documents/Codifica - MaisPraTi/Trilha-Dev.-Full-Stack-Jr.-2025/4 - Fundamentos de Programacao em Java e Introducao ao Ecossistema Spring/lista-7-POO&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.CalculoFreteLambdasTest.taxaDeEntregaDeveSerGratuitaParaValoresMaioresQue200Reais">
-    <configuration name="CalculoFreteLambdasTest.deveCalcularCorretamentePacParaRJ" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.java in lista-7-POO">
+    <configuration name="CalculoFreteLambdasTest.deveSerPossivelTrocarAsEstrategiasParaUmMesmoObjeto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lista-7-POO" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CalculoFreteLambdasTest" />
-      <option name="METHOD_NAME" value="deveCalcularCorretamentePacParaRJ" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exercicio8PadraoStrategy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="exercicio8PadraoStrategy" />
+      <option name="MAIN_CLASS_NAME" value="exercicio8PadraoStrategy.CalculoFreteLambdasTest" />
+      <option name="METHOD_NAME" value="deveSerPossivelTrocarAsEstrategiasParaUmMesmoObjeto" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CalculoFreteLambdasTest.deveCalcularCorretamentePacParaSP" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FuncionarioTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lista-7-POO" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CalculoFreteLambdasTest" />
-      <option name="METHOD_NAME" value="deveCalcularCorretamentePacParaSP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exercicio3Heranca.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="exercicio3Heranca" />
+      <option name="MAIN_CLASS_NAME" value="exercicio3Heranca.FuncionarioTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProdutoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lista-7-POO" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exercicio1e2Encapsulamento.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="exercicio1e2Encapsulamento" />
+      <option name="MAIN_CLASS_NAME" value="exercicio1e2Encapsulamento.ProdutoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VeiculoTest.bicicletaDeveSerAPrimeiraAlcancarAVelocidaMaximaELancarExcecao" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lista-7-POO" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exercicio4Polimorfismo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="exercicio4Polimorfismo" />
+      <option name="MAIN_CLASS_NAME" value="exercicio4Polimorfismo.VeiculoTest" />
+      <option name="METHOD_NAME" value="bicicletaDeveSerAPrimeiraAlcancarAVelocidaMaximaELancarExcecao" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CalculoFreteLambdasTest.deveCalcularCorretamenteRetiradaNaLojaParaSP" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="java in lista-7-POO" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lista-7-POO" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CalculoFreteLambdasTest" />
-      <option name="METHOD_NAME" value="deveCalcularCorretamenteRetiradaNaLojaParaSP" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CalculoFreteLambdasTest.deveCalcularCorretamenteSedexParaMG" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lista-7-POO" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CalculoFreteLambdasTest" />
-      <option name="METHOD_NAME" value="deveCalcularCorretamenteSedexParaMG" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CalculoFreteLambdasTest.taxaDeEntregaDeveSerGratuitaParaValoresMaioresQue200Reais" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lista-7-POO" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CalculoFreteLambdasTest" />
-      <option name="METHOD_NAME" value="taxaDeEntregaDeveSerGratuitaParaValoresMaioresQue200Reais" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CalculoFreteLambdasTest.taxaDeEntregaDeveSerGratuitaParaValoresMaioresQue200Reais" />
-        <item itemvalue="JUnit.CalculoFreteLambdasTest.deveCalcularCorretamenteRetiradaNaLojaParaSP" />
-        <item itemvalue="JUnit.CalculoFreteLambdasTest.deveCalcularCorretamentePacParaRJ" />
-        <item itemvalue="JUnit.CalculoFreteLambdasTest.deveCalcularCorretamenteSedexParaMG" />
-        <item itemvalue="JUnit.CalculoFreteLambdasTest.deveCalcularCorretamentePacParaSP" />
+        <item itemvalue="JUnit.java in lista-7-POO" />
+        <item itemvalue="JUnit.CalculoFreteLambdasTest.deveSerPossivelTrocarAsEstrategiasParaUmMesmoObjeto" />
+        <item itemvalue="JUnit.VeiculoTest.bicicletaDeveSerAPrimeiraAlcancarAVelocidaMaximaELancarExcecao" />
+        <item itemvalue="JUnit.FuncionarioTest" />
+        <item itemvalue="JUnit.ProdutoTest" />
       </list>
     </recent_temporary>
   </component>

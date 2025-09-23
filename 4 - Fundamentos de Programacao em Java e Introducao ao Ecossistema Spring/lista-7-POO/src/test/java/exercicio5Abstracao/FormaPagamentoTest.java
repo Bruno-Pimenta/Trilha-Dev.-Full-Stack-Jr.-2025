@@ -1,3 +1,5 @@
+package exercicio5Abstracao;
+
 import org.example.entities.exercicio5.Boleto;
 import org.example.entities.exercicio5.CartaoCredito;
 import org.example.entities.exercicio5.FormaPagamento;

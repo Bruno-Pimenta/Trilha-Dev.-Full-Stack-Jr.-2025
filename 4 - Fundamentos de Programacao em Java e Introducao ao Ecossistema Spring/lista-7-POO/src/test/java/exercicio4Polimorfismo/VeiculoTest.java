@@ -1,3 +1,5 @@
+package exercicio4Polimorfismo;
+
 import org.example.entities.exercicio4.Bicicleta;
 import org.example.entities.exercicio4.Carro;
 import org.example.entities.exercicio4.Trem;
@@ -93,7 +95,7 @@ public class VeiculoTest {
     }
 
     @Test
-    public void carroDeveSerOPrimeiroAlcancarAVelocidaMaximaELancarExcecao() {
+    public void bicicletaDeveSerAPrimeiraAlcancarAVelocidaMaximaELancarExcecao() {
         Carro carro = new Carro();
         Trem trem = new Trem();
         Bicicleta bicicleta = new Bicicleta();

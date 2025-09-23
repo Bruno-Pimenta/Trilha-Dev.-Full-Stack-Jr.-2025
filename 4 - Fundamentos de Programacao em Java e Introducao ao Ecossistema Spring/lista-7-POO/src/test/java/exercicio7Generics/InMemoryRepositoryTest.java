@@ -1,11 +1,12 @@
+package exercicio7Generics;
+
 import org.example.entities.exercicio7.*;
 import org.example.exceptions.EntidadeNaoEncontradaException;
-import org.junit.Test;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
 
+import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class InMemoryRepositoryTest {

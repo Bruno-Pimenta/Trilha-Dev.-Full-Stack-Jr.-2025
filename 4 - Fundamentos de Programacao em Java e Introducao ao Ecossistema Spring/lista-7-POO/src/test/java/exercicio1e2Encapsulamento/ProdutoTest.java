@@ -1,3 +1,5 @@
+package exercicio1e2Encapsulamento;
+
 import org.example.entities.exercicio1e2.Produto;
 import org.example.exceptions.DescontoInvalidoException;
 import org.junit.Test;
