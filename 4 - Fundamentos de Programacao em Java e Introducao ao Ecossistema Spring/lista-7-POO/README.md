@@ -48,11 +48,11 @@ Para validação dos exercícios foram exploradas funcionalidades por meio de te
 
 Clone o repositório:
 
-git clone https://github.com/Bruno-Pimenta/Trilha-Dev.-Full-Stack-Jr.-2025.git
+* git clone https://github.com/Bruno-Pimenta/Trilha-Dev.-Full-Stack-Jr.-2025.git
 
 Acesse a pasta:
 
-cd "Trilha-Dev.-Full-Stack-Jr.-2025/4 - Fundamentos de Programacao em Java e Introducao ao Ecossistema Spring/lista-7-POO"
+* cd "Trilha-Dev.-Full-Stack-Jr.-2025/4 - Fundamentos de Programacao em Java e Introducao ao Ecossistema Spring/lista-7-POO"
 
 Abra o projeto em sua IDE de preferência ou rode via terminal com Maven.
 
