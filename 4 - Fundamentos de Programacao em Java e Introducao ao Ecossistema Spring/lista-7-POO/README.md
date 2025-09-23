@@ -26,7 +26,7 @@ O código está disponível no seguinte repositório:
 
 👉 https://github.com/Bruno-Pimenta/Trilha-Dev.-Full-Stack-Jr.-2025
 
-Os exercícios desta lista encontram-se na pasta: 4 - Fundamentos de Programacao em Java e Introducao ao Ecossistema Spring
+Os exercícios desta lista encontram-se na pasta: 4 - Fundamentos de Programacao em Java e Introducao ao Ecossistema Spring/lista-7-POO
 
 ## ⚙️ Pré-requisitos
 
