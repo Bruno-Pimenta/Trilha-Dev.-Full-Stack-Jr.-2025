@@ -1,0 +1,46 @@
+--Criacao da base de dados da cafeteria BomGosto
+CREATE DATABASE cafeteria_bomgosto;
+
+--Criacao das tabelas
+CREATE TABLE cardapio (
+    id_cardapio SERIAL PRIMARY KEY,
+    nome_cafe VARCHAR(100) NOT NULL UNIQUE,
+    descricao TEXT,
+    preco_unitario DECIMAL(10,2) NOT NULL
+);
+
+CREATE TABLE comanda (
+    id_comanda SERIAL PRIMARY KEY,
+    data DATE NOT NULL,
+    numero_mesa INT NOT NULL,
+    nome_cliente VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE item_comanda (
+	id_item_comanda SERIAL PRIMARY KEY,
+    fk_idComanda INT NOT NULL,
+    fk_idCardapio INT NOT NULL,
+    quantidade INT NOT NULL CHECK (quantidade > 0),
+    FOREIGN KEY (fk_idComanda) REFERENCES comanda(id_comanda),
+    FOREIGN KEY (fk_idCardapio) REFERENCES cardapio(id_cardapio),
+	CONSTRAINT unique_item UNIQUE (fk_idComanda, fk_idCardapio)
+);
+
+--Inserção de registros
+INSERT INTO cardapio (nome_cafe, descricao, preco_unitario) VALUES
+('Espresso Italiano', 'Café curto e encorpado, de origem italiana, feito sob pressão.', 6.50),
+('Café Arábica Colombiano', 'Grãos suaves e aromáticos, com notas frutadas típicas da Colômbia.', 8.00),
+('Café Etíope Sidamo', 'Café africano de sabor marcante e notas florais.', 9.50),
+('Café Brasileiro Cerrado Mineiro', 'Café equilibrado com notas de chocolate e corpo médio.', 7.00),
+('Café Turco', 'Café forte e espesso, preparado sem filtrar, típico do Oriente Médio.', 8.50),
+('Café Vienense', 'Mistura de espresso com chantilly, tradicional da Áustria.', 9.00);
+
+INSERT INTO comanda (data, numero_mesa, nome_cliente) VALUES
+('2025-10-28', 3, 'Leon'),
+('2025-10-28', 2, 'Claire'),
+('2025-10-28', 8, 'Jill'),
+('2025-10-28', 7, 'Carlos'),
+('2025-10-28', 1, 'Chris');
+
+INSERT INTO item_comanda (fk_idComanda, fk_idCardapio, quantidade) VALUES
+(1, 1, 2),(1, 4, 1), (2, 6, 1), (3, 5, 2), (4, 3, 1), (3, 4, 2), (5, 2, 1);
